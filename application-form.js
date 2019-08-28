@@ -1,3 +1,21 @@
+function onLoadConfigureOtherDropdown() {
+    let showForOther = document.querySelectorAll('.show-for-other');
+    showForOther.forEach(e => e.classList.add('hidden'));
+
+    let howHeardDescription = document.querySelector('#inf_howhearddescription');
+    howHeardDescription.placeholder = howHeardDescription.dataset.jsPlaceholder;
+
+    let howHeard = document.querySelector('#inf_howheard');
+    howHeard.addEventListener('input', (e) => {
+        let otherSelected = document.querySelector('#inf_howheard .other_option').selected;
+
+        if (otherSelected) {
+            showForOther.forEach(e => e.classList.remove('hidden'));
+        } else {
+            showForOther.forEach(e => e.classList.add('hidden'));
+        }
+    });
+}
 
 function cvFileUploadChanged() {
     let cv = document.getElementById('cv_fileUpload');
@@ -10,8 +28,6 @@ function cvFileUploadChanged() {
         cv_filename.innerText = 'No file chosen';
     }
 }
-
-
 
 function submitApplicationForm(event) {
     event.preventDefault();
@@ -120,3 +136,5 @@ function setSubmitButtonStatus(status) {
     document.getElementById('submit-button').classList.remove('sending', 'success', 'error');
     document.getElementById('submit-button').classList.add(status);
 }
+
+window.addEventListener("load", onLoadConfigureOtherDropdown);

@@ -28,6 +28,14 @@ hr {
     margin: 30px auto;
 }
 
+.hidden {
+    display: none;
+}
+/* For the application form hidden elements it needs to be this specific or it will be overriden */
+.application-form .application-form-field.hidden {
+    display: none;
+}
+
 /* TODO: This is breaking things (e.g. the "Contact Us" bit on each page has too much spacing now */
 p.margin-between {
     margin-top: 0.5em;

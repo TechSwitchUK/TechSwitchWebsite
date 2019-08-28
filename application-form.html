@@ -31,8 +31,6 @@
             <form action="https://online.softwire.com/apply/submit" method="POST" class="medium-width-block-narrow-margins application-form" id="application_form" onsubmit="submitApplicationForm(event);">
 
                 <input type="hidden" name="vacancy" value="57">
-                <input type="hidden" name="inf_howheard" value="Other">
-                <input type="hidden" name="inf_howhearddescription" value="n/a - Techsmiths">
                 <input type="hidden" name="inf_appliedBefore" value="No">
                 <input type="hidden" name="per_preferredStart" value="n/a - Techsmiths">
 
@@ -47,7 +45,7 @@
                     <input type="text" name="preferred_pronoun" id="preferred_pronoun" placeholder="Preferred pronoun (optional)" class="application-form-field">
                     <input type="email" name="per_primaryEmail" id="per_primaryEmail" placeholder="Email address *" class="application-form-field">
                     <input type="tel" name="per_primaryTelephone" id="per_primaryTelephone" placeholder="Phone number *" class="application-form-field">
-                    
+
                     <div class="half-width-label">Do you require a work permit? *</div>
                     <div class="half-width-options">
                         <label class="radio-button-label">
@@ -59,6 +57,23 @@
                             No
                         </label>
                     </div>
+
+                    <div class="half-width-label">How did you hear about us? (optional)</div>
+                    <select class="application-form-field" id="inf_howheard" name="inf_howheard">
+                        <option value="" disabled selected>Please select...</option>
+                        <option value="From a friend">From a friend</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="CW Jobs">CW Jobs</option>
+                        <option value="Reed">Reed</option>
+                        <option value="Jobbio">Jobbio</option>
+                        <option value="Online search">Online search (e.g. Google)</option>
+                        <option value="Techmeetups London Tech Job Fair 2019">Techmeetups London Tech Job Fair 2019</option>
+                        <option value="Silicon Milkroundabout 2019">Silicon Milkroundabout 2019</option>
+                        <option value="Other Networking Event">Other Networking Event</option>
+                        <option class="other_option" value="Other">Other (please specify)</option>
+                    </select>
+                    <div class="show-for-other"></div>
+                    <input type="text" name="inf_howhearddescription" id="inf_howhearddescription" data-js-placeholder="Please specify here..." placeholder="If other, please specify here..." class="application-form-field show-for-other">
                 </div>
 
 
