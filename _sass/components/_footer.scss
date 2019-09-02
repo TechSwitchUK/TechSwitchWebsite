@@ -19,6 +19,21 @@ footer {
         width: 40px;
         color: #ffffff;  /* For alt text */
     }
+    .footer-links {
+        margin-bottom: 10px;
+        list-style-type: none;
+        color: #ffffff;
+
+        li {
+            padding: 3px 7px;
+        }
+
+        @media (min-width: 600px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
     
     .copyright {
         margin: 0;
