@@ -3,116 +3,136 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="contact-form.js" async></script>
-        <script src="console-message.js" async></script>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>Software Development Course | Techsmiths | London</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="contact-form.js" async></script>
+    <script src="console-message.js" async></script>
 
-        {% include analytics.html %}
-    </head>
-    <body>
-        {% include header.html %}
+    <title>Software Development Course | TechSwitch | London</title>
 
-        <div class="hero-box">
+    {% include analytics.html %}
+</head>
+
+<body>
+    {% include header.html %}
+
+    <div class="hero-box">
+        <picture>
+            <source media="(orientation: landscape) and (min-width: 961px)"
+                srcset="images/homepage-hero-1920-1280.jpg" />
+            <source media="(orientation: landscape) and (min-width: 526px)" srcset="images/homepage-hero-960-640.jpg" />
+            <source media="(orientation: landscape)" srcset="images/homepage-hero-525-350.jpg" />
+            <source media="(orientation: portrait) and (min-width: 641px)"
+                srcset="images/homepage-hero-1280-1280.jpg" />
+            <source media="(orientation: portrait) and (min-width: 351px)" srcset="images/homepage-hero-640-640.jpg" />
+            <source media="(orientation: portrait)" srcset="images/homepage-hero-350-350.jpg" />
+            <img src="images/homepage-hero-1920-1280.jpg" style="object-position: center 18%;" alt="" />
+            <!-- alt="" because this image is just for decoration -->
+        </picture>
+        <div class="tagline-phrase">
+            <span class="become-a">Become a </span>
+            <span class="tagline">Software Developer</span>
+        </div>
+        <div class="tagline-phrase">
+            <span class="become-a">Become a </span>
+            <span class="tagline">TechSwitcher</span>
+        </div>
+    </div>
+
+    <div class="button-row float-over-hero-image">
+        <a href="/application-form" class="button button-black-on-yellow-on-black">Apply Now</a>
+    </div>
+
+    <div class="section black-background">
+        <p class="medium-width-text white-text">
+            Our mission at TechSwitch is to provide people from all walks of life with the opportunity to become expert
+            Software Developers. Our training bootcamp will help you expand your horizons, learn new skills and enter a
+            new industry.
+        </p>
+        <div class="button-row button-row-gap-above">
+            <a href="/contact" class="button button-yellow-on-black-on-black">Get in touch</a>
+            <a href="/course" class="button button-black-on-yellow-on-black">More info</a>
+        </div>
+    </div>
+
+    <div class="section yellow-background checkerboard-grid grid-with-gap grid-picture-first">
+        <div class="row">
             <picture>
-                <source media="(orientation: landscape) and (min-width: 961px)" srcset="images/homepage-hero-1920-1280.jpg" />
-                <source media="(orientation: landscape) and (min-width: 526px)" srcset="images/homepage-hero-960-640.jpg" />
-                <source media="(orientation: landscape)" srcset="images/homepage-hero-525-350.jpg" />
-                <source media="(orientation: portrait) and (min-width: 641px)" srcset="images/homepage-hero-1280-1280.jpg" />
-                <source media="(orientation: portrait) and (min-width: 351px)" srcset="images/homepage-hero-640-640.jpg" />
-                <source media="(orientation: portrait)" srcset="images/homepage-hero-350-350.jpg" />
-                <img src="images/homepage-hero-1920-1280.jpg" style="object-position: center 18%;" alt="" /><!-- alt="" because this image is just for decoration -->
+                <source media="(min-width: 601px)" srcset="images/rita-square-470.jpg" />
+                <img src="images/rita-letterbox-560-187.jpg" alt="" />
+                <!-- alt="" because this image is just for decoration -->
             </picture>
-            <div class="tagline-phrase">
-                <span class="become-a">Become a </span>
-                <span class="tagline">Software Developer</span>
-            </div>
-            <div class="tagline-phrase">
-                <span class="become-a">Become a </span>
-                <span class="tagline">Techsmith</span>
-            </div>
-        </div>
-
-        <div class="button-row float-over-hero-image">
-            <a href="/application-form" class="button button-black-on-yellow-on-black">Apply Now</a>
-        </div>
-
-        <div class="section black-background">
-            <p class="medium-width-text white-text">
-                Techsmiths’ mission is to provide people from all walks of life with the opportunity to become expert Software Developers. Our training bootcamp will help you expand your horizons, learn new skills and enter a new industry.
-            </p>
-            <div class="button-row button-row-gap-above">
-                <a href="/contact" class="button button-yellow-on-black-on-black">Get in touch</a>
-                <a href="/course" class="button button-black-on-yellow-on-black">More info</a>
+            <div class="text white-text black-background">
+                <h2>Break into tech</h2>
+                <p>You don’t need to have been coding for years or have studied computer science to be a great software
+                    developer. If you love to learn and problem-solve then you could be a great developer too!</p>
+                <p>If you have gained skills and experience in previous roles, you bring something extra to the table.
+                    As a developer, you may have more dimensions than someone who went through a traditional route into
+                    coding.</p>
             </div>
         </div>
 
-        <div class="section yellow-background checkerboard-grid grid-with-gap grid-picture-first">
-            <div class="row">
-                <picture>
-                    <source media="(min-width: 601px)" srcset="images/rita-square-470.jpg" />
-                    <img src="images/rita-letterbox-560-187.jpg" alt="" /><!-- alt="" because this image is just for decoration -->
-                </picture>
-                <div class="text white-text black-background">
-                    <h2>Break into tech</h2>
-                    <p>You don’t need to have been coding for years or have studied computer science to be a great software developer. If you love to learn and problem-solve then you could be a great developer too!</p>
-                    <p>If you have gained skills and experience in previous roles, you bring something extra to the table.  As a developer, you may have more dimensions than someone who went through a traditional route into coding.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <picture>
-                    <source media="(min-width: 601px)" srcset="images/gareth-square-470.jpg" />
-                    <img src="images/gareth-letterbox-560-187.jpg" alt="" /><!-- alt="" because this image is just for decoration -->
-                </picture>
-                <div class="text white-text black-background">
-                    <h2>Be supported</h2>
-                    <p>We know that changing career can be scary but we'll support you throughout the whole process. From learning the skills necessary to be a confident coder, to finding employment after completing the course, we will be there every step of the way.</p>
-                    <p>Every learner has a dedicated trainer responsible for their well-being.  They provide stability and continuity and will answer any questions you might have.</p>
-                </div>
-            </div>
-
-            <div class="button-row button-row-gap-above">
-                <a href="/apply" class="button button-black-on-yellow-on-yellow">Learn more</a>
+        <div class="row">
+            <picture>
+                <source media="(min-width: 601px)" srcset="images/gareth-square-470.jpg" />
+                <img src="images/gareth-letterbox-560-187.jpg" alt="" />
+                <!-- alt="" because this image is just for decoration -->
+            </picture>
+            <div class="text white-text black-background">
+                <h2>Be supported</h2>
+                <p>We know that changing career can be scary but we'll support you throughout the whole process. From
+                    learning the skills necessary to be a confident coder, to finding employment after completing the
+                    course, we will be there every step of the way.</p>
+                <p>Every learner has a dedicated trainer responsible for their well-being. They provide stability and
+                    continuity and will answer any questions you might have.</p>
             </div>
         </div>
 
-        <div class="section black-background white-text">
-            <h2>FAQ</h2>
-            <div class="two-columns">
-                <div>
-                    <h3>Are there any necessary qualifications?</h3>
-                    <p>No! If you have done some hobby coding in your spare time that might help you find your feet quicker but it definitely isn't necessary.</p>
-                </div>
-                <div>
-                    <h3>How long is the course?</h3>
-                    <p>The course consists of 12 weeks of training, followed by an 18-month job placement in industry with the option of making that a permanent role.</p>
-                </div>
-                <div>
-                    <h3>Do you need any previous coding experience?</h3>
-                    <p>No!  No previous experience is required. We will provide all the training you need to become a confident software developer. </p>
-                </div>
-                <div>
-                    <h3>What are the hours and where is it?</h3>
-                    <p> The course is full-time (Mon-Fri, roughly 9:30am-5:30pm). The initial 12-week bootcamp is based in our offices in north London.</p>
-                </div>
+        <div class="button-row button-row-gap-above">
+            <a href="/apply" class="button button-black-on-yellow-on-yellow">Learn more</a>
+        </div>
+    </div>
+
+    <div class="section black-background white-text">
+        <h2>FAQ</h2>
+        <div class="two-columns">
+            <div>
+                <h3>Are there any necessary qualifications?</h3>
+                <p>No! If you have done some hobby coding in your spare time that might help you find your feet quicker
+                    but it definitely isn't necessary.</p>
             </div>
-            <div class="button-row button-row-gap-above">
-                <a href="/course" class="button button-black-on-yellow-on-black">More info</a>
+            <div>
+                <h3>How long is the course?</h3>
+                <p>The course consists of 12 weeks of training, followed by an 18-month job placement in industry with
+                    the option of making that a permanent role.</p>
+            </div>
+            <div>
+                <h3>Do you need any previous coding experience?</h3>
+                <p>No! No previous experience is required. We will provide all the training you need to become a
+                    confident software developer. </p>
+            </div>
+            <div>
+                <h3>What are the hours and where is it?</h3>
+                <p> The course is full-time (Mon-Fri, roughly 9:30am-5:30pm). The initial 12-week bootcamp is based in
+                    our offices in north London.</p>
             </div>
         </div>
+        <div class="button-row button-row-gap-above">
+            <a href="/faq" class="button button-black-on-yellow-on-black">See more</a>
+        </div>
+    </div>
 
-        {% include our-recent-techsmiths.html %}
+    {% include our-recent-techswitchers.html %}
 
-        {% include companies-weve-worked-with.html %}
+    {% include companies-weve-worked-with.html %}
 
-        {% include get-in-touch.html content="Techsmiths,<br />Unit 110 Highgate Studios,<br />53-79 Highgate Rd,<br />London<br />NW5 1TL, UK" %}
+    {% include get-in-touch.html content="TechSwitch,<br />Unit 110 Highgate Studios,<br />53-79 Highgate Rd,<br />London<br />NW5 1TL, UK" %}
 
-        {% include footer.html %}
+    {% include footer.html %}
 
-    </body>
+</body>
+
 </html>
