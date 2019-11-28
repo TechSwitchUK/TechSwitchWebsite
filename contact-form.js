@@ -14,7 +14,7 @@ function submitContactUsForm() {
     };
 
     setContactUsFormStatus('sending');
-    post('https://ran8cs5ftc.execute-api.eu-west-2.amazonaws.com/default/techsmiths-contact-form',
+    post('https://ran8cs5ftc.execute-api.eu-west-2.amazonaws.com/default/techsmiths-contact-form', //TODO need to change this to TechSwitch I think?
         body,
         () => { // success
             setContactUsFormStatus('success');
