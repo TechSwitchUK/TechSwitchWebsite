@@ -69,6 +69,8 @@ function submitApplicationForm(event) {
         if (event.target.status === 200) {
             setSubmitButtonStatus('success');
             document.getElementById('application_form_sent').classList.add('error-message-visible');
+            document.getElementById('declaration-box').classList.add('invisible')
+            document.getElementById('application-success-box').classList.remove('invisible')
         }
         else {
             setSubmitButtonStatus('error');

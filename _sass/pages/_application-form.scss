@@ -122,7 +122,7 @@
         display: none;
     }
 
-    .declaration-box {
+    #declaration-box {
         border: 2px solid #ffc100;
         padding: 0 1em 10px 1em;
     }
@@ -186,4 +186,12 @@
         background-color: #dd4400;
     }
 
+    #application-success-box {
+        border: 2px solid #ffc100;
+        padding: 0 1em 10px 1em;
+    }
+
+    .invisible {
+        display: none;
+    }
 }
