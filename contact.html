@@ -20,7 +20,7 @@
         <main id="maincontent">
             <div class="section black-background">
                 <div class="medium-width-block white-text">
-                    <h1>Contact us</h1>
+                    <h1 id="contact-us-title">Contact us</h1>
                     <p>
                         TechSwitch,<br />
                         Unit 110 Highgate Studios,<br />
@@ -33,11 +33,11 @@
                     <p><a href="tel:+442074857500">020 7485 7500</a></p>
 
                     <div class="contact-us-form" id="contact-us-form">
-                        <input type="text" id="contact-us-form-name" placeholder="Name" />
-                        <input type="email" id="contact-us-form-email" placeholder="Email" />
-                        <textarea rows="6" id="contact-us-form-message" placeholder="Message"></textarea>
-                        <button type="button" class="spinner" onclick="submitContactUsForm();">Send</button>
-                        <div class="error-message">Sorry, that didn't work.<br />Please try emailing us at <a href="mailto:info@techswitch.co.uk">info@techswitch.co.uk</a></div>
+                        <input type="text" id="contact-us-form-name" placeholder="Name" aria-describedby="contact-us-title" />
+                        <input type="email" id="contact-us-form-email" placeholder="Email" aria-describedby="contact-us-title" />
+                        <textarea rows="6" id="contact-us-form-message" placeholder="Message" aria-describedby="contact-us-title"></textarea>
+                        <button type="button" class="spinner" onclick="submitContactUsForm();" aria-describedby="contact-us-title">Send</button>
+                        <div class="error-message">Sorry, that didn't work.<br aria-hidden="true" />Please try emailing us at <a href="mailto:info@techswitch.co.uk">info@techswitch.co.uk</a></div>
                     </div>
 
                     <iframe
