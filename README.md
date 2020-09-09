@@ -1,10 +1,10 @@
-# Techsmiths website
+# Techswitch website
 
 ## What is this?
-This is the GitHub repository for the Techsmiths website.
+This is the GitHub repository for the Techswitch website.
 
 ## I just want to view the website
-No problem. Just head over to https://www.techsmiths.uk
+No problem. Just head over to https://www.techswitch.co.uk
 
 ## I want to have a nose around to see how you made the site!
 Great! Have a browse!
@@ -35,11 +35,11 @@ However, we've used a few nice tools to help us:
 
 * [GitHub Pages](https://pages.github.com)  
   Hosting a website can be a bit if a hassle, and can be costly.  
-  For a simple, static website like techsmiths.uk, GitHub Pages make this very easy, and free!  
+  For a simple, static website like techswitch.co.uk, GitHub Pages make this very easy, and free!  
   You even get a nice, shiny HTTPS certificate from [Let's Encrypt](https://letsencrypt.org) 🔒
 
 ## Zero-to-hero
-If you've been asked to make a change to the Techsmiths website, this is the bit for you to read...
+If you've been asked to make a change to the Techswitch website, this is the bit for you to read...
 
 1. Install [Ruby](https://www.ruby-lang.org/en)
    
@@ -58,7 +58,7 @@ If you've been asked to make a change to the Techsmiths website, this is the bit
 3. Clone this repo
    
    ```
-   git clone git@github.com:Softwire/TechsmithsWebsite.git
+   git clone git@github.com:TechSwitchUK/TechSwitchWebsite.git
    ```
 
 4. Run Jekyll
@@ -74,5 +74,5 @@ If you've been asked to make a change to the Techsmiths website, this is the bit
 
 5. Push your changes to GitHub
 
-   The site will automatically be rebuilt and pushed to https://www.techsmiths.uk  
-   You can see the status of the build / deployment at https://github.com/Softwire/TechsmithsWebsite/deployments
+   The site will automatically be rebuilt and pushed to https://www.techswitch.co.uk 
+   You can see the status of the build / deployment at https://github.com/TechSwitchUK/TechSwitchWebsite/deployments
