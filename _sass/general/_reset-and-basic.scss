@@ -26,3 +26,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.visually-hidden {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}

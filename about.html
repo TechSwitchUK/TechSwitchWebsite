@@ -17,101 +17,102 @@
 
 <body>
     {% include header.html %}
+    <main id="maincontent">
+        <div class="section black-background checkerboard-grid grid-no-gap grid-picture-first">
+            <div class="row">
+                <picture>
+                    <source media="(min-width: 601px)" srcset="images/ben-jamie-square-800.jpg" />
+                    <img src="images/ben-jamie-600-450.jpg" style="object-position: 75% center;" alt="" />
+                    <!-- alt="" because this image is just for decoration -->
+                </picture>
+                <div class="text white-text black-background">
+                    <h2>About</h2>
+                    <h3>Training the latest generation of software developers</h3>
+                    <p>You’re invited to take control of your future and join our software development course. We know that
+                        great software developers can come from any background. With our many years of experience training
+                        graduates in software development we are now applying that same experience to people who have no
+                        previous experience with development but have the will to learn.</p>
+                    <p>As a part of the training we guarantee a job placement after the bootcamp. </p>
+                    <p>Explore our course today and get in touch with any questions.</p>
 
-    <div class="section black-background checkerboard-grid grid-no-gap grid-picture-first">
-        <div class="row">
-            <picture>
-                <source media="(min-width: 601px)" srcset="images/ben-jamie-square-800.jpg" />
-                <img src="images/ben-jamie-600-450.jpg" style="object-position: 75% center;" alt="" />
-                <!-- alt="" because this image is just for decoration -->
-            </picture>
-            <div class="text white-text black-background">
-                <h2>About</h2>
-                <h3>Training the latest generation of software developers</h3>
-                <p>You’re invited to take control of your future and join our software development course. We know that
-                    great software developers can come from any background. With our many years of experience training
-                    graduates in software development we are now applying that same experience to people who have no
-                    previous experience with development but have the will to learn.</p>
-                <p>As a part of the training we guarantee a job placement after the bootcamp. </p>
-                <p>Explore our course today and get in touch with any questions.</p>
-
-                <div class="button-row button-row-gap-above">
-                    <a href="/contact" class="button button-yellow-on-black-on-black">Get in touch</a>
+                    <div class="button-row button-row-gap-above">
+                        <a href="/contact" class="button button-yellow-on-black-on-black">Get in touch</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="section yellow-background">
-        <h2>Our Team</h2>
+        <div class="section yellow-background">
+            <h2>Our Team</h2>
 
-        <div class="our-team">
-            <div class="person">
-                <picture>
-                    <img src="images/headshots-gareth-180.jpg" alt="Photo of Gareth Johnson">
-                </picture>
-                <h3>Gareth Johnson</h3>
-                <p>Head of TechSwitch</p>
+            <div class="our-team">
+                <div class="person">
+                    <picture>
+                        <img src="images/headshots-gareth-180.jpg" alt="Photo of Gareth Johnson">
+                    </picture>
+                    <h3>Gareth Johnson</h3>
+                    <p>Head of TechSwitch</p>
+                </div>
+
+                <div class="person">
+                    <picture>
+                        <img src="images/headshots-james-180.jpg" alt="Photo of James Griffiths">
+                    </picture>
+                    <h3>James Griffiths</h3>
+                    <p>Trainer</p>
+                </div>
+
+                <div class="person">
+                    <picture>
+                        <img src="images/headshots-rupert-180.jpg" alt="Photo of Rupert McKay">
+                    </picture>
+                    <h3>Rupert McKay</h3>
+                    <p>Trainer</p>
+                </div>
+
+                <div class="person">
+                    <picture>
+                        <img src="images/headshots-stephen-180.jpg" alt="Photo of Stephen Shaw">
+                    </picture>
+                    <h3>Stephen Shaw</h3>
+                    <p>Trainer</p>
+                </div>
+
+                <div class="person">
+                    <picture>
+                        <img src="images/headshots-sasha-180.jpg" alt="Photo of Sasha Burgoyne">
+                    </picture>
+                    <h3>Sasha Burgoyne</h3>
+                    <p>Course Manager</p>
+                </div>
+
+                <div class="person">
+                    <picture>
+                        <img src="images/headshots-mike-180.jpg" alt="Photo of Mike Walker">
+                    </picture>
+                    <h3>Mike Walker</h3>
+                    <p>Trainer</p>
+                </div>
+
+                <div class="person">
+                    <picture>
+                        <img src="images/headshots-sophia-180.jpg" alt="Photo of Sophia Lin">
+                    </picture>
+                    <h3>Sophia<br aria-hidden="true" />Lin</h3>
+                    <p>Senior Sales Manager</p>
+                </div>
+
+                <div class="person">
+                    <picture>
+                        <img src="images/headshots-josh-180.jpg" alt="Photo of Josh Powell">
+                    </picture>
+                    <h3>Josh<br aria-hidden="true" />Powell</h3>
+                    <p>Trainer</p>
+                </div>
+
             </div>
-
-            <div class="person">
-                <picture>
-                    <img src="images/headshots-james-180.jpg" alt="Photo of James Griffiths">
-                </picture>
-                <h3>James Griffiths</h3>
-                <p>Trainer</p>
-            </div>
-
-            <div class="person">
-                <picture>
-                    <img src="images/headshots-rupert-180.jpg" alt="Photo of Rupert McKay">
-                </picture>
-                <h3>Rupert McKay</h3>
-                <p>Trainer</p>
-            </div>
-
-            <div class="person">
-                <picture>
-                    <img src="images/headshots-stephen-180.jpg" alt="Photo of Stephen Shaw">
-                </picture>
-                <h3>Stephen Shaw</h3>
-                <p>Trainer</p>
-            </div>
-
-            <div class="person">
-                <picture>
-                    <img src="images/headshots-sasha-180.jpg" alt="Photo of Sasha Burgoyne">
-                </picture>
-                <h3>Sasha Burgoyne</h3>
-                <p>Course Manager</p>
-            </div>
-
-            <div class="person">
-                <picture>
-                    <img src="images/headshots-mike-180.jpg" alt="Photo of Mike Walker">
-                </picture>
-                <h3>Mike Walker</h3>
-                <p>Trainer</p>
-            </div>
-
-            <div class="person">
-                <picture>
-                    <img src="images/headshots-sophia-180.jpg" alt="Photo of Sophia Lin">
-                </picture>
-                <h3>Sophia<br />Lin</h3>
-                <p>Senior Sales Manager</p>
-            </div>
-
-            <div class="person">
-                <picture>
-                    <img src="images/headshots-josh-180.jpg" alt="Photo of Josh Powell">
-                </picture>
-                <h3>Josh<br />Powell</h3>
-                <p>Trainer</p>
-            </div>
-
         </div>
-    </div>
+    </main>
 
     {% include companies-weve-worked-with.html %}
 

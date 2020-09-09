@@ -19,90 +19,92 @@
 <body>
     {% include header.html %}
 
-    <div class="hero-box">
-        <picture>
-            <source media="(orientation: landscape) and (min-width: 961px)" srcset="images/hire-hero-1920-1280.jpg" />
-            <source media="(orientation: landscape) and (min-width: 526px)" srcset="images/hire-hero-960-640.jpg" />
-            <source media="(orientation: landscape)" srcset="images/hire-hero-525-350.jpg" />
-            <source media="(orientation: portrait) and (min-width: 641px)" srcset="images/hire-hero-1280-1280.jpg" />
-            <source media="(orientation: portrait) and (min-width: 351px)" srcset="images/hire-hero-640-640.jpg" />
-            <source media="(orientation: portrait)" srcset="images/hire-hero-350-350.jpg" />
-            <img src="images/hire-hero-1920-1280.jpg" style="object-position: 70% 65%;" alt="" />
-            <!-- alt="" because this image is just for decoration -->
-        </picture>
-        <div class="tagline-phrase">
-            <span class="tagline">Hire a TechSwitcher</span>
-        </div>
-        <div class="tagline-phrase">
-            <span class="tagline-medium">Next cohort available:<br /><strong>January 2020</strong></span>
-        </div>
-    </div>
-
-    <div class="button-row float-over-hero-image">
-        <a href="/contact" class="button button-black-on-yellow-on-black">Get in touch</a>
-    </div>
-
-    <div class="section yellow-background black-text">
-        <h2>Hire world class software developers</h2>
-        <p class="medium-width-text black-text">
-            We’re taking Softwire’s vast experience of training graduates to be outstanding software developers and
-            applying it to a new generation of skilled, motivated individuals wishing to break into the world of tech.
-        </p>
-    </div>
-
-    <div class="section black-background white-text checkerboard-grid grid-with-gap grid-text-first">
-        <h2>TechSwitchers' Skillsets</h2>
-
-        <div class="row">
+    <main id="maincontent">
+        <div class="hero-box">
             <picture>
-                <source media="(min-width: 601px)" srcset="images/lowri-emily-josh-square-600.jpg" />
-                <img src="images/lowri-emily-josh-letterbox-560-187.jpg" style="object-position: 63% center;" alt="" />
+                <source media="(orientation: landscape) and (min-width: 961px)" srcset="images/hire-hero-1920-1280.jpg" />
+                <source media="(orientation: landscape) and (min-width: 526px)" srcset="images/hire-hero-960-640.jpg" />
+                <source media="(orientation: landscape)" srcset="images/hire-hero-525-350.jpg" />
+                <source media="(orientation: portrait) and (min-width: 641px)" srcset="images/hire-hero-1280-1280.jpg" />
+                <source media="(orientation: portrait) and (min-width: 351px)" srcset="images/hire-hero-640-640.jpg" />
+                <source media="(orientation: portrait)" srcset="images/hire-hero-350-350.jpg" />
+                <img src="images/hire-hero-1920-1280.jpg" style="object-position: 70% 65%;" alt="" />
                 <!-- alt="" because this image is just for decoration -->
             </picture>
-            <div class="text black-text yellow-background">
-                <h2>Versatility</h2>
-                <p>Most businesses require staff that can understand the full lifecycle, and transition between
-                    different roles when needed. Managing a small project, setting up a CI pipeline, designing a new
-                    page, writing high quality code, system-testing a product – we’d expect our technical staff to be
-                    able to do any of these. It makes resourcing much easier if your staff are multi-dimensional. We
-                    believe in truly cross-functional teams, and that comes from a diverse skill set – built on a
-                    foundation of excellence in software engineering. </p>
+            <div class="tagline-phrase">
+                <span class="tagline">Hire a TechSwitcher</span>
+            </div>
+            <div class="tagline-phrase">
+                <span class="tagline-medium">Next cohort available:<br /><strong>January 2020</strong></span>
             </div>
         </div>
 
-        <div class="row">
-            <picture>
-                <source media="(min-width: 601px)" srcset="images/michael-square-600.jpg" />
-                <img src="images/michael-letterbox-560-187.jpg" alt="" />
-                <!-- alt="" because this image is just for decoration -->
-            </picture>
-            <div class="text black-text yellow-background">
-                <h2>Soft Skills</h2>
-                <p>Soft skills can make a huge difference to how successful delivery team members are. We select
-                    candidates not merely on their potential as developers but what other expertise they bring to the
-                    table. And we consider it an essential part of training to bring out the best in people in all areas
-                    and to help them instill good habits. This is all achieved by better diversity of recruitment –
-                    something we take very seriously, and have strong supporting networks to help with.</p>
-            </div>
+        <div class="button-row float-over-hero-image">
+            <a href="/contact" class="button button-black-on-yellow-on-black">Get in touch</a>
         </div>
 
-        <div class="row">
-            <picture>
-                <source media="(min-width: 601px)" srcset="images/rita-jenny-square-600.jpg" />
-                <img src="images/rita-jenny-letterbox-560-187.jpg" style="object-position: 20% center;" alt="" />
-                <!-- alt="" because this image is just for decoration -->
-            </picture>
-            <div class="text black-text yellow-background">
-                <h2>Genuine Understanding</h2>
-                <p>As a developer, it’s far more important to understand the fundamental principles of software
-                    development than it is to know exactly how to do any one particular task. Everyone has access to
-                    resources such as Stack Overflow but those resources won’t usually help explain the big picture, or
-                    why one approach might be better than another. The most valuable employees are the ones who
-                    understand the objectives and requirements – even the ones that aren’t made explicit - and can use
-                    their own judgement and experience as they research the best way of implementing the detail.</p>
+        <div class="section yellow-background black-text">
+            <h2>Hire world class software developers</h2>
+            <p class="medium-width-text black-text">
+                We’re taking Softwire’s vast experience of training graduates to be outstanding software developers and
+                applying it to a new generation of skilled, motivated individuals wishing to break into the world of tech.
+            </p>
+        </div>
+
+        <div class="section black-background white-text checkerboard-grid grid-with-gap grid-text-first">
+            <h2>TechSwitchers' Skillsets</h2>
+
+            <div class="row">
+                <picture>
+                    <source media="(min-width: 601px)" srcset="images/lowri-emily-josh-square-600.jpg" />
+                    <img src="images/lowri-emily-josh-letterbox-560-187.jpg" style="object-position: 63% center;" alt="" />
+                    <!-- alt="" because this image is just for decoration -->
+                </picture>
+                <div class="text black-text yellow-background">
+                    <h2>Versatility</h2>
+                    <p>Most businesses require staff that can understand the full lifecycle, and transition between
+                        different roles when needed. Managing a small project, setting up a CI pipeline, designing a new
+                        page, writing high quality code, system-testing a product – we’d expect our technical staff to be
+                        able to do any of these. It makes resourcing much easier if your staff are multi-dimensional. We
+                        believe in truly cross-functional teams, and that comes from a diverse skill set – built on a
+                        foundation of excellence in software engineering. </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <picture>
+                    <source media="(min-width: 601px)" srcset="images/michael-square-600.jpg" />
+                    <img src="images/michael-letterbox-560-187.jpg" alt="" />
+                    <!-- alt="" because this image is just for decoration -->
+                </picture>
+                <div class="text black-text yellow-background">
+                    <h2>Soft Skills</h2>
+                    <p>Soft skills can make a huge difference to how successful delivery team members are. We select
+                        candidates not merely on their potential as developers but what other expertise they bring to the
+                        table. And we consider it an essential part of training to bring out the best in people in all areas
+                        and to help them instill good habits. This is all achieved by better diversity of recruitment –
+                        something we take very seriously, and have strong supporting networks to help with.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <picture>
+                    <source media="(min-width: 601px)" srcset="images/rita-jenny-square-600.jpg" />
+                    <img src="images/rita-jenny-letterbox-560-187.jpg" style="object-position: 20% center;" alt="" />
+                    <!-- alt="" because this image is just for decoration -->
+                </picture>
+                <div class="text black-text yellow-background">
+                    <h2>Genuine Understanding</h2>
+                    <p>As a developer, it’s far more important to understand the fundamental principles of software
+                        development than it is to know exactly how to do any one particular task. Everyone has access to
+                        resources such as Stack Overflow but those resources won’t usually help explain the big picture, or
+                        why one approach might be better than another. The most valuable employees are the ones who
+                        understand the objectives and requirements – even the ones that aren’t made explicit - and can use
+                        their own judgement and experience as they research the best way of implementing the detail.</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     {% include our-recent-techswitchers.html %}
 

@@ -5,7 +5,7 @@
             <img src="images/james-letterbox-560-187.jpg" alt="" /><!-- alt="" because this image is just for decoration -->
         </picture>
         <div class="text white-text black-background">
-            <h2>Get in touch</h2>
+            <h2 id="get-in-touch-title">Get in touch</h2>
             <p>
                 {{ include.content }}
             </p>
@@ -13,11 +13,11 @@
             <p><a href="tel:+442074857500">020 7485 7500</a></p>
 
             <div class="contact-us-form" id="contact-us-form">
-                <input type="text" id="contact-us-form-name" placeholder="Name" />
-                <input type="email" id="contact-us-form-email" placeholder="Email" />
-                <textarea rows="6" id="contact-us-form-message" placeholder="Message"></textarea>
-                <button type="button" class="spinner" onclick="submitContactUsForm();">Send</button>
-                <div class="error-message">Sorry, that didn't work.<br />Please try emailing us at <a href="mailto:info@techswitch.co.uk">info@techswitch.co.uk</a></div>
+                <input type="text" id="contact-us-form-name" placeholder="Name" aria-describedby="get-in-touch-title"/>
+                <input type="email" id="contact-us-form-email" placeholder="Email" aria-describedby="get-in-touch-title"/>
+                <textarea rows="6" id="contact-us-form-message" placeholder="Message" aria-describedby="get-in-touch-title"></textarea>
+                <button type="button" class="spinner" onclick="submitContactUsForm();" aria-describedby="get-in-touch-title">Send</button>
+                <div class="error-message">Sorry, that didn't work.<br aria-hidden="true" />Please try emailing us at <a href="mailto:info@techswitch.co.uk">info@techswitch.co.uk</a></div>
             </div>
         </div>
     </div>

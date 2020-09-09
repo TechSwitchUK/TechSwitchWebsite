@@ -1,3 +1,15 @@
+#skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 16px;
+    background-color: #ffc100;
+    z-index: 2;
+    padding: 8px;
+
+    &:focus {
+        left: 16px;
+    }
+}
 
 header {
 
