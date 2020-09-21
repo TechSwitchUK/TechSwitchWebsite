@@ -17,189 +17,189 @@
     <body>
         {% include header.html %}
         <main id="maincontent">
-            <div class="section black-background white-text">
-                <h2>COVID-19 Update</h2>
+        <div class="section black-background white-text">
+            <h2>COVID-19 Update</h2>
 
-                <p class="medium-width-text white-text margin-between">
-                    Due to the current pandemic, as of 20th March we are delaying the start date of the next cohort and suspending applications for now. Anyone who has any questions can email us at <a href="mailto:info@techswitch.uk">info@techswitch.uk</a>
-                    <br>
-                    We will post any updates on the website and on our social media and will hopefully be running future courses again soon.
-                    <br>
-                    <br>
-                    Best wishes,
-                    <br>
-                    The TechSwitch Team
-                </p>
-                <!--<p class="medium-width-text white-text margin-between">
-                    All information given here will be treated as confidential.
-                </p>
+            <p class="medium-width-text white-text margin-between">
+                We are happy to announce that we will shortly be reopening applications for a cohort starting in January 2021. Anyone who has any questions can email us at <a href="mailto:info@techswitch.uk">info@techswitch.uk</a>
+                <br>
+                Please keep an eye on our social media and this page for applications reopening. 
+                <br>
+                <br>
+                Best wishes, 
+                <br>
+                The TechSwitch Team
+            </p>
+            <!--<p class="medium-width-text white-text margin-between">
+                All information given here will be treated as confidential.
+            </p>
 
 
-                <form action="https://online.softwire.com/apply/submit" method="POST" class="medium-width-block-narrow-margins application-form" id="application_form" onsubmit="submitApplicationForm(event);">
+            <form action="https://online.softwire.com/apply/submit" method="POST" class="medium-width-block-narrow-margins application-form" id="application_form" onsubmit="submitApplicationForm(event);">
 
-                    <input type="hidden" name="vacancy" value="57">
-                    <input type="hidden" name="inf_appliedBefore" value="No">
-                    <input type="hidden" name="per_preferredStart" value="May Cohort">
+                <input type="hidden" name="vacancy" value="57">
+                <input type="hidden" name="inf_appliedBefore" value="No">
+                <input type="hidden" name="per_preferredStart" value="Jan 2021">
 
-                    <hr>
+                <hr>
 
-                    <h3>Personal Details</h3>
+                <h3>Personal Details</h3>
 
-                    <div class="two-cols">
-                        <input type="text" name="per_forename" id="per_forename" placeholder="First name *" class="application-form-field">
-                        <input type="text" name="per_surname" id="per_surname" placeholder="Surname *" class="application-form-field">
-                        <input type="text" name="preferred_name" id="preferred_name" placeholder="Preferred name (optional)" class="application-form-field">
-                        <input type="text" name="preferred_pronoun" id="preferred_pronoun" placeholder="Preferred pronoun (optional)" class="application-form-field">
-                        <input type="email" name="per_primaryEmail" id="per_primaryEmail" placeholder="Email address *" class="application-form-field">
-                        <input type="tel" name="per_primaryTelephone" id="per_primaryTelephone" placeholder="Phone number *" class="application-form-field">
+                <div class="two-cols">
+                    <input type="text" name="per_forename" id="per_forename" placeholder="First name *" class="application-form-field">
+                    <input type="text" name="per_surname" id="per_surname" placeholder="Surname *" class="application-form-field">
+                    <input type="text" name="preferred_name" id="preferred_name" placeholder="Preferred name (optional)" class="application-form-field">
+                    <input type="text" name="preferred_pronoun" id="preferred_pronoun" placeholder="Preferred pronoun (optional)" class="application-form-field">
+                    <input type="email" name="per_primaryEmail" id="per_primaryEmail" placeholder="Email address *" class="application-form-field">
+                    <input type="tel" name="per_primaryTelephone" id="per_primaryTelephone" placeholder="Phone number *" class="application-form-field">
 
-                        <div class="half-width-label">Do you require a work permit? *</div>
-                        <div class="half-width-options">
-                            <label class="radio-button-label">
-                                <input type="radio" name="add_workPermit" value="Yes">
-                                Yes
-                            </label>
-                            <label class="radio-button-label">
-                                <input type="radio" name="add_workPermit" value="No" checked>
-                                No
-                            </label>
-                        </div>
+                    <div class="half-width-label">Do you require a work permit? *</div>
+                    <div class="half-width-options">
+                        <label class="radio-button-label">
+                            <input type="radio" name="add_workPermit" value="Yes">
+                            Yes
+                        </label>
+                        <label class="radio-button-label">
+                            <input type="radio" name="add_workPermit" value="No" checked>
+                            No
+                        </label>
+                    </div>
 
-                        <div class="half-width-label">How did you hear about us? (optional)</div>
-                        <select class="application-form-field" id="inf_howheard" name="inf_howheard">
+                    <div class="half-width-label">How did you hear about us? (optional)</div>
+                    <select class="application-form-field" id="inf_howheard" name="inf_howheard">
+                        <option value="" disabled selected>Please select...</option>
+                        <option value="From a friend">From a friend</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="CW Jobs">CW Jobs</option>
+                        <option value="TARGETjobs">TARGETjobs</option>
+                        <option value="Reed">Reed</option>
+                        <option value="Women Returners">Women Returners</option>
+                        <option value="Women in Tech">Women in Tech</option>
+                        <option value="STEM Women">STEM Women</option>
+                        <option value="Technojobs">Technojobs</option>
+                        <option value="Online search">Online search (e.g. Google)</option>
+                        <option value="Find Your Flex">Find Your Flex</option>
+                        <option value="Silicon Milkroundabout 2019">Silicon Milkroundabout 2019</option>
+                        <option value="Other Networking Event">Other Networking Event</option>
+                        <option class="other_option" value="Other">Other (please specify)</option>
+                    </select>
+                    <div class="show-for-other"></div>
+                    <input type="text" name="inf_howhearddescription" id="inf_howhearddescription" data-js-placeholder="Please specify here..." placeholder="If other, please specify here..." class="application-form-field show-for-other">
+                </div>
+
+
+                <hr>
+
+                <h3>CV and Covering Letter</h3>
+
+                <textarea id="per_coveringLetter" name="per_coveringLetter" rows="5" class="application-form-field"
+                          placeholder="Covering letter * -  please include links to any online portfolio work which might be relevant (e.g. github)"></textarea>
+
+                <div class="cv-upload">
+                    CV *
+                    <label for="cv_fileUpload" id="cv_fileUpload_label" class="button button-yellow-on-black-on-black">Choose file +</label>
+                    <input type="file" id="cv_fileUpload" name="cv_fileUpload" onchange="cvFileUploadChanged();">
+                    <span id="cv_filename">No file chosen</span>
+                </div>
+
+                <textarea id="inf_additional" name="inf_additional" rows="5" class="application-form-field"
+                          placeholder="Any other information?"></textarea>
+
+
+                <hr>
+
+                <h3>Diversity Information</h3>
+
+                <p>We are committed to promoting diversity and equality at TechSwitch, and to help us with this we would be grateful if you could complete the following questions. Your answers allow us to track applicant diversity and to ensure equality in our interview tests. Your answers will not appear on your application and will not influence our decisions in any way.</p>
+
+                <p>Please complete this part of the form only if you consent to the use of this information for internal statistical purposes. This information will be kept for five years and will then be used to create anonymised recruitment statistics from which you cannot be identified.</p>
+
+                <div class="two-cols">
+                    <div class="half-width-label">What gender do you identify as?</div>
+                    <div class="half-width-options">
+                        <select class="application-form-field" id="per_sex" name="per_sex">
                             <option value="" disabled selected>Please select...</option>
-                            <option value="From a friend">From a friend</option>
-                            <option value="LinkedIn">LinkedIn</option>
-                            <option value="CW Jobs">CW Jobs</option>
-                            <option value="TARGETjobs">TARGETjobs</option>
-                            <option value="Reed">Reed</option>
-                            <option value="Women Returners">Women Returners</option>
-                            <option value="Women in Tech">Women in Tech</option>
-                            <option value="STEM Women">STEM Women</option>
-                            <option value="Technojobs">Technojobs</option>
-                            <option value="Online search">Online search (e.g. Google)</option>
-                            <option value="Find Your Flex">Find Your Flex</option>
-                            <option value="Silicon Milkroundabout 2019">Silicon Milkroundabout 2019</option>
-                            <option value="Other Networking Event">Other Networking Event</option>
-                            <option class="other_option" value="Other">Other (please specify)</option>
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                            <option value="Other">Other</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
                         </select>
-                        <div class="show-for-other"></div>
-                        <input type="text" name="inf_howhearddescription" id="inf_howhearddescription" data-js-placeholder="Please specify here..." placeholder="If other, please specify here..." class="application-form-field show-for-other">
                     </div>
 
-
-                    <hr>
-
-                    <h3>CV and Covering Letter</h3>
-
-                    <textarea id="per_coveringLetter" name="per_coveringLetter" rows="5" class="application-form-field"
-                              placeholder="Covering letter * -  please include links to any online portfolio work which might be relevant (e.g. github)"></textarea>
-
-                    <div class="cv-upload">
-                        CV *
-                        <label for="cv_fileUpload" id="cv_fileUpload_label" class="button button-yellow-on-black-on-black">Choose file +</label>
-                        <input type="file" id="cv_fileUpload" name="cv_fileUpload" onchange="cvFileUploadChanged();">
-                        <span id="cv_filename">No file chosen</span>
+                    <div class="half-width-label">What is your nationality?</div>
+                    <div class="half-width-options">
+                        <select class="application-form-field" id="add_nationality" name="add_nationality">
+                            <option value="" disabled selected>Please select...</option>
+                            <option value="British">British</option>
+                            <option value="Non British">Non British</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                        </select>
                     </div>
 
-                    <textarea id="inf_additional" name="inf_additional" rows="5" class="application-form-field"
-                              placeholder="Any other information?"></textarea>
+                    <div class="half-width-label">What is your ethnicity?</div>
+                    <div class="half-width-options">
+                        <select class="application-form-field" id="per_ethnicity" name="per_ethnicity">
+                            <option value="" disabled selected>Please select...</option>
+                            <option value="White">White</option>
+                            <option value="Mixed / multiple ethnic groups">Mixed / multiple ethnic groups</option>
+                            <option value="Asian / Asian British">Asian / Asian British</option>
+                            <option value="Black / African / Caribbean / Black British">Black / African / Caribbean / Black British</option>
+                            <option value="Other">Other ethnic group</option>
+                            <option value="Prefer not to say">Prefer not to say</option>
+                        </select>
+                    </div>
+                </div>
 
 
-                    <hr>
+                <hr>
 
-                    <h3>Diversity Information</h3>
+                <h3>Declaration</h3>
 
-                    <p>We are committed to promoting diversity and equality at TechSwitch, and to help us with this we would be grateful if you could complete the following questions. Your answers allow us to track applicant diversity and to ensure equality in our interview tests. Your answers will not appear on your application and will not influence our decisions in any way.</p>
+                <div id="declaration-box">
+                    <p>
+                        <b>I confirm that no information has been omitted which is relevant in evaluating me as a potential employee for TechSwitch and that all information supplied is accurate.</b>
+                        <br />
+                        TechSwitch consider information regarding serious misdemeanours to be relevant.
+                    </p>
 
-                    <p>Please complete this part of the form only if you consent to the use of this information for internal statistical purposes. This information will be kept for five years and will then be used to create anonymised recruitment statistics from which you cannot be identified.</p>
+                    <p>This information will be processed as per the terms of our Privacy Policy.</p>
 
-                    <div class="two-cols">
-                        <div class="half-width-label">What gender do you identify as?</div>
-                        <div class="half-width-options">
-                            <select class="application-form-field" id="per_sex" name="per_sex">
-                                <option value="" disabled selected>Please select...</option>
-                                <option value="Female">Female</option>
-                                <option value="Male">Male</option>
-                                <option value="Other">Other</option>
-                                <option value="Prefer not to say">Prefer not to say</option>
-                            </select>
-                        </div>
-
-                        <div class="half-width-label">What is your nationality?</div>
-                        <div class="half-width-options">
-                            <select class="application-form-field" id="add_nationality" name="add_nationality">
-                                <option value="" disabled selected>Please select...</option>
-                                <option value="British">British</option>
-                                <option value="Non British">Non British</option>
-                                <option value="Prefer not to say">Prefer not to say</option>
-                            </select>
-                        </div>
-
-                        <div class="half-width-label">What is your ethnicity?</div>
-                        <div class="half-width-options">
-                            <select class="application-form-field" id="per_ethnicity" name="per_ethnicity">
-                                <option value="" disabled selected>Please select...</option>
-                                <option value="White">White</option>
-                                <option value="Mixed / multiple ethnic groups">Mixed / multiple ethnic groups</option>
-                                <option value="Asian / Asian British">Asian / Asian British</option>
-                                <option value="Black / African / Caribbean / Black British">Black / African / Caribbean / Black British</option>
-                                <option value="Other">Other ethnic group</option>
-                                <option value="Prefer not to say">Prefer not to say</option>
-                            </select>
-                        </div>
+                    <div class="button-row">
+                        <button class="button button-black-on-yellow-on-black" id="submit-button">
+                            <!-- Q: Why is this a button, not an input[type=button]?
+                                 A: So the ::after (spinner, tick, cross) can work
+                                    Apparently you can't use an ::after on input[type=button] (shrug) ->
+                            Submit
+                        </button>
                     </div>
 
+                    <div class="error-message" id="application_form_validation_error">
+                        It looks like you didn't fill in all the required fields.
+                        <br />
+                        We've highlighted the missing fields in red.
+                    </div>
+                    <div class="error-message" id="application_form_sent">Thank you for applying to TechSwitch!</div>
+                    <div class="error-message" id="application_form_failed_to_send">
+                        There seems to be a problem with our application form at the moment.
+                        <br />
+                        Please try emailing us at <a href="mailto:info@techswitch.uk">info@techswitch.uk</a>
+                    </div>
+                </div>
 
-                    <hr>
-
-                    <h3>Declaration</h3>
-
-                    <div id="declaration-box">
-                        <p>
-                            <b>I confirm that no information has been omitted which is relevant in evaluating me as a potential employee for TechSwitch and that all information supplied is accurate.</b>
-                            <br />
-                            TechSwitch consider information regarding serious misdemeanours to be relevant.
-                        </p>
-
-                        <p>This information will be processed as per the terms of our Privacy Policy.</p>
-
-                        <div class="button-row">
-                            <button class="button button-black-on-yellow-on-black" id="submit-button">
-                                <!-- Q: Why is this a button, not an input[type=button]?
-                                     A: So the ::after (spinner, tick, cross) can work
-                                        Apparently you can't use an ::after on input[type=button] (shrug) ->
-                                Submit
-                            </button>
-                        </div>
-
-                        <div class="error-message" id="application_form_validation_error">
-                            It looks like you didn't fill in all the required fields.
-                            <br />
-                            We've highlighted the missing fields in red.
-                        </div>
-                        <div class="error-message" id="application_form_sent">Thank you for applying to TechSwitch!</div>
-                        <div class="error-message" id="application_form_failed_to_send">
-                            There seems to be a problem with our application form at the moment.
-                            <br />
-                            Please try emailing us at <a href="mailto:info@techswitch.uk">info@techswitch.uk</a>
-                        </div>
+                <div class="invisible section" id="application-success-box">
+                        <h2>Thank you for applying to TechSwitch!</h2>
+                        <br />
+                        <p> Your application has been successfully submitted and we will be in touch within a couple of days to let you know if you have been invited to the next stage of the process.
+                    </p>
+                    
+                    <div class="button-row">
+                        <a href="/index.html" class ="button button-black-on-yellow-on-black">Okay</a>
                     </div>
 
-                    <div class="invisible section" id="application-success-box">
-                            <h2>Thank you for applying to TechSwitch!</h2>
-                            <br />
-                            <p> Your application has been successfully submitted and we will be in touch within a couple of days to let you know if you have been invited to the next stage of the process.
-                        </p>
+                </div>
 
-                        <div class="button-row">
-                            <a href="/index.html" class ="button button-black-on-yellow-on-black">Okay</a>
-                        </div>
-
-                    </div>
-
-                </form> -->
-            </div>
+            </form> -->
+        </div>
         </main>
         {% include footer.html %}
 
