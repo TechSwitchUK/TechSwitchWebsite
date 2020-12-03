@@ -1,0 +1,27 @@
+
+.blog {
+    max-width: 960px;
+    @media (min-width: 361px) {
+        width: calc(100% - 40px);
+    }
+
+    margin: auto;
+    padding: 20px 10px;
+    @media (min-width: 601px) {
+        padding: 30px 20px;
+    }
+
+    background-color: white;
+
+    font-size: 1rem;
+    line-height: 1.5;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .read-more {
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+}
