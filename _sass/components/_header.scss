@@ -15,7 +15,7 @@ header {
 
     /* NAV BAR */
     /* (mobile) */
-    @media (max-width: 700px), (max-height: 500px) {
+    @media (max-width: 753px), (max-height: 500px) {
         background-color: #181818;
         height: 70px;
         padding: 10px;
@@ -118,7 +118,7 @@ header {
 
     /* NAV BAR */
     /* (desktop) */
-    @media (min-width: 701px) and (min-height: 501px) {
+    @media (min-width: 754px) and (min-height: 501px) {
         background-color: #181818;
         height: 100px;
         padding: 20px calc((100vw - 1000px) / 2);

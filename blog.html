@@ -1,0 +1,83 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Make a career change into tech with our 12-week software development bootcamp.">
+
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script src="/contact-form.js" async></script>
+    <script src="/console-message.js" async></script>
+
+    <title>Blog | TechSwitch</title>
+
+    {% include analytics.html %}
+</head>
+
+<body>
+    {% include header.html %}
+
+    <main id="maincontent">
+        <div class="hero-box">
+            <picture>
+                <source media="(orientation: landscape) and (min-width: 961px)"
+                    srcset="/images/paper-hero-1920-1280.jpg" />
+                <source media="(orientation: landscape) and (min-width: 526px)"
+                    srcset="/images/paper-hero-960-640.jpg" />
+                <source media="(orientation: landscape)" srcset="/images/paper-hero-525-350.jpg" />
+                <source media="(orientation: portrait) and (min-width: 641px)"
+                    srcset="/images/paper-hero-1280-1280.jpg" />
+                <source media="(orientation: portrait) and (min-width: 351px)"
+                    srcset="/images/paper-hero-640-640.jpg" />
+                <source media="(orientation: portrait)" srcset="/images/paper-hero-350-350.jpg" />
+                <img src="/images/paper-hero-1920-1280.jpg" style="object-position: 75% 25%;"
+                    alt="" />
+            </picture>
+            <h1 class="tagline-phrase">
+                <span class="tagline">The Techswitch Blog</span>
+            </h1>
+        </div>
+
+        {% for post in site.posts %}
+            <div class="section black-background white-text">
+
+                <article class="blog">
+                    <h2>
+                        <a href="{{ post.url }}">
+                            {{ post.title }}
+                        </a>
+                    </h2>
+
+                    <p class="date">
+                        {{ post.date | date: "%a, %e %b %Y" }}
+                    </p>
+
+                    {{ post.excerpt }}
+
+                    <p class="read-more">
+                        <a href="{{ post.url }}">
+                            Read more
+                        </a>
+                    </p>
+                </article>
+
+            </div>
+        {% endfor %}
+
+        <div class="section black-background white-text">
+            <div class="button-row">
+                <a href="/application-form" class="button button-yellow-on-black-on-black">Apply Now</a>
+            </div>
+        </div>
+    </main>
+
+    {% include get-in-touch.html content="If you're interested in applying or just want to know more, drop us a line here!" %}
+
+    {% include footer.html %}
+
+</body>
+
+</html>
