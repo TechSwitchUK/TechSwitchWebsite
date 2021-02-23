@@ -42,7 +42,7 @@
         </div>
 
         {% for post in site.posts %}
-            <div class="section yellow-background black-text">
+            <div class="section black-background white-text">
 
                 <article class="blog">
                     <h2>
@@ -51,7 +51,7 @@
                         </a>
                     </h2>
 
-                    <p>
+                    <p class="date">
                         {{ post.date | date: "%a, %e %b %Y" }}
                     </p>
 
