@@ -1,0 +1,25 @@
+.column-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  
+  padding: 50px;
+  margin: 50px;
+  list-style: none;
+}
+
+.column-item {
+  padding: 5px;
+  max-width: 20%;
+  margin-top: 10px; 
+  text-align: center;
+}
+
+.name {
+  text-align: right;
+}
+
+.quotation-mark {
+  content: '\201D'; 
+  color: #000000;
+}

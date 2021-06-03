@@ -9,13 +9,13 @@
         margin: 10px 0;
         padding: 5px;
     
-        color: #ffffff;
+        color: #000000;
         background: none;
         border: none;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid #000000;
     }
     input::placeholder, textarea::placeholder {
-        color: #ffffff;
+        color: #000000;
     }
     
     button {
@@ -25,9 +25,9 @@
         padding: 10px;
         position: relative;
     
-        color: #ffffff;
+        color: #000000;
         background: none;
-        border: 1px solid #ffffff;
+        border: 1px solid #000000;
     }
     &.sending button, &.success button, &.error button {
         color: transparent;
@@ -41,7 +41,7 @@
         top: calc(50% - 11px);
     }
     &.sending button::after {
-        border: 2px solid #ffffff;
+        border: 2px solid #000000;
         border-right: none;
         border-bottom: none;
         border-radius: 50%;
@@ -52,11 +52,11 @@
     }
     &.success button::after {
         content: '\2714';  // Unicode Tick: ✔️
-        color: #ffffff;
+        color: #000000;
     }
     &.error button::after {
         content: '\274C';  // Unicode Cross: ❌
-        color: #ffffff;
+        color: #000000;
     }
     
     .error-message {

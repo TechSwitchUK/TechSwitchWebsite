@@ -24,25 +24,27 @@
         <div class="hero-box">
             <picture>
                 <source media="(orientation: landscape) and (min-width: 961px)"
-                    srcset="/images/paper-hero-1920-1280.jpg" />
+                    srcset="/images/hire-hero-1920-1280.jpg" />
                 <source media="(orientation: landscape) and (min-width: 526px)"
-                    srcset="/images/paper-hero-960-640.jpg" />
-                <source media="(orientation: landscape)" srcset="/images/paper-hero-525-350.jpg" />
+                    srcset="/images/hire-hero-960-640.jpg" />
+                <source media="(orientation: landscape)" srcset="/images/hire-hero-525-350.jpg" />
                 <source media="(orientation: portrait) and (min-width: 641px)"
-                    srcset="/images/paper-hero-1280-1280.jpg" />
-                <source media="(orientation: portrait) and (min-width: 351px)"
-                    srcset="/images/paper-hero-640-640.jpg" />
-                <source media="(orientation: portrait)" srcset="/images/paper-hero-350-350.jpg" />
-                <img src="/images/paper-hero-1920-1280.jpg" style="object-position: 75% 25%;"
-                    alt="" />
+                    srcset="/images/hire-hero-1280-1280.jpg" />
+                <source media="(orientation: portrait) and (min-width: 351px)" srcset="/images/hire-hero-640-640.jpg" />
+                <source media="(orientation: portrait)" srcset="/images/hire-hero-350-350.jpg" />
+                <img src="/images/hire-hero-1920-1280.jpg" style="object-position: 70% 65%;"
+                    alt="Learners pairing on a software development exercise at a computer. Woman on the left, man on the right." />
+
             </picture>
-            <h1 class="tagline-phrase">
-                <span class="tagline">The TechSwitch Blog</span>
-            </h1>
+            <div class="full-page-header">
+                <h1 class="tagline-phrase">
+                    <span class="tagline">TechSwitch Blog</span>
+                </h1>
+            </div>
         </div>
 
         {% for post in site.posts %}
-            <div class="section black-background white-text">
+            <div class="section white-background black-text">
 
                 <article class="blog">
                     <h2>
@@ -67,11 +69,10 @@
             </div>
         {% endfor %}
 
-        <div class="section black-background white-text">
             <div class="button-row">
-                <a href="/application-form" class="button button-yellow-on-black-on-black">Apply Now</a>
+                <a href="/application-form" class="button button-black-on-yellow-on-black">Apply Now</a>
             </div>
-        </div>
+
     </main>
 
     {% include get-in-touch.html content="If you're interested in applying or just want to know more, drop us a line here!" %}

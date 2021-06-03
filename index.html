@@ -2,7 +2,7 @@
 ---
 
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -21,57 +21,56 @@
 <body>
     {% include header.html %}
     <main id="maincontent">
-        <div class="hero-box">
-            <picture>
-                <source media="(orientation: landscape) and (min-width: 961px)"
-                    srcset="/images/homepage-hero-1920-1280.jpg" />
-                <source media="(orientation: landscape) and (min-width: 526px)" srcset="/images/homepage-hero-960-640.jpg" />
-                <source media="(orientation: landscape)" srcset="/images/homepage-hero-525-350.jpg" />
-                <source media="(orientation: portrait) and (min-width: 641px)"
-                    srcset="/images/homepage-hero-1280-1280.jpg" />
-                <source media="(orientation: portrait) and (min-width: 351px)" srcset="/images/homepage-hero-640-640.jpg" />
-                <source media="(orientation: portrait)" srcset="/images/homepage-hero-350-350.jpg" />
-                <img src="/images/homepage-hero-1920-1280.jpg" style="object-position: center 18%;" alt="Women on the TechSwitch bootcamp watching a presentation" />
-            </picture>
-            <h1 class="tagline-phrase">
-                <span class="become-a">Join our </span>
-                <span class="tagline">coding bootcamp</span>
-            </h1>
-            <div class="tagline-phrase">
-                <span class="become-a">Make a </span>
-                <span class="tagline">TechSwitch</span>
+        <div class="section white-background hero-banner grid-no-gap">
+            <div class="row">
+                <div class="text black-text grey-background">
+                    <h1>Start your<br> career in <br> coding</h1>
+                    <div class="button-row button-row-gap-above">
+                        <a href="/application-form.html" class="button button-black-on-yellow-on-black">Apply Now</a>
+                    </div>
+                </div>
+                <picture>
+                    <source media="(min-width: 601px)" srcset="/images/three-techswitchers-square-1200.png" />
+                    <img src="/images/three-techswitchers-square-1200.png" alt="Three TechSwitchers discussing a problem" />
+                </picture>
             </div>
         </div>
+        <div class="section white-background">
+            <h2>Make a TechSwitch</h2>
+            <p class="medium-width-text black-text">
+                At TechSwitch we find promising individuals who are motivated to move into tech and train them as junior
+                software developers to be deployed into development teams.</p>
 
-        <div class="button-row float-over-hero-image">
-            <a href="/application-form" class="button button-black-on-yellow-on-black">Apply Now</a>
-        </div>
+                <p class="medium-width-text black-text">   
+                Our mission is to diversify the tech industry, so our training is completely free and anyone can apply
+                regardless of their age, employment history or level of education. </p>
 
-        <div class="section black-background">
-            <p class="medium-width-text white-text">
-                Our mission at TechSwitch is to provide people from all walks of life with the opportunity to become expert
-                Software Developers. Our training bootcamp will help you expand your horizons, learn new skills and enter a
-                new industry while we support you all the way.
+                <p class="medium-width-text black-text">
+                Following the bootcamp, TechSwitchers are offered 18-month placements with our partners, providing them
+                with their first role in software developments and the placement company with an opportunity to get to
+                know them with the option to hire them from us permanently. </p>
             </p>
             <div class="button-row button-row-gap-above">
-                <a href="/contact" class="button button-yellow-on-black-on-black">Get in touch</a>
-                <a href="/course" class="button button-black-on-yellow-on-black">More info</a>
+                <a href="/application-form.html" class="button button-black-on-yellow-on-black">Apply Now</a>
             </div>
         </div>
 
-        <div class="section yellow-background checkerboard-grid grid-with-gap grid-picture-first">
+        <div class="section white-background checkerboard-grid grid-no-gap grid-picture-first">
             <div class="row">
                 <picture>
                     <source media="(min-width: 601px)" srcset="/images/rita-square-470.jpg" />
                     <img src="/images/rita-letterbox-560-187.jpg" alt="Woman at a computer" />
 
                 </picture>
-                <div class="text white-text black-background">
+                <div class="text black-text grey-background">
                     <h2>Break into tech</h2>
-                    <p>You don’t need to have been coding for years or have studied computer science to be a great software
+                    <p>You don’t need to have been coding for years or have studied computer science to be a great
+                        software
                         developer. If you love to learn and problem-solve then you could be a great developer too!</p>
-                    <p>If you have gained skills and experience in previous roles, you bring something extra to the table.
-                        As a developer, you may have more dimensions than someone who went through a traditional route into
+                    <p>If you have gained skills and experience in previous roles, you bring something extra to the
+                        table.
+                        As a developer, you may have more dimensions than someone who went through a traditional route
+                        into
                         coding.</p>
                 </div>
             </div>
@@ -82,27 +81,31 @@
                     <img src="/images/gareth-letterbox-560-187.jpg" alt="Course trainer at whiteboard" />
 
                 </picture>
-                <div class="text white-text black-background">
+                <div class="text black-text grey-background">
                     <h2>Be supported</h2>
-                    <p>We know that changing career can be scary but we'll support you throughout the whole process. From
-                        learning the skills necessary to be a confident coder, to finding employment after completing the
+                    <p>We know that changing career can be scary but we'll support you throughout the whole process.
+                        From
+                        learning the skills necessary to be a confident coder, to finding employment after completing
+                        the
                         course, we will be there every step of the way.</p>
-                    <p>Every learner has a dedicated trainer responsible for their well-being. They provide stability and
+                    <p>Every learner has a dedicated trainer responsible for their well-being. They provide stability
+                        and
                         continuity and will answer any questions you might have.</p>
                 </div>
             </div>
 
             <div class="button-row button-row-gap-above">
-                <a href="/apply" class="button button-black-on-yellow-on-yellow">Learn more</a>
+                <a href="/apply" class="button button-black-on-yellow-on-black">Learn more</a>
             </div>
         </div>
 
-        <div class="section black-background white-text">
+        <div class="section grey-background black-text">
             <h2>FAQ</h2>
             <div class="two-columns">
                 <div>
                     <h3>Are there any necessary qualifications?</h3>
-                    <p>No! If you have done some hobby coding in your spare time that might help you find your feet quicker
+                    <p>No! If you have done some hobby coding in your spare time that might help you find your feet
+                        quicker
                         but it definitely isn't necessary.</p>
                 </div>
                 <div>
@@ -117,21 +120,24 @@
                 </div>
                 <div>
                     <h3>What are the hours and where is it?</h3>
-                    <p> The course is full-time (Mon-Fri, roughly 10am-4pm). The initial 12-week bootcamp is normally based in
-                        our offices in north London but we have since made the course remote to protect our staff and learners.</p>
+                    <p> The course is full-time (Mon-Fri, roughly 10am-4pm). The initial 12-week bootcamp is normally
+                        based in
+                        our offices in north London but we have since made the course remote to protect our staff and
+                        learners.</p>
                 </div>
             </div>
-            <div class="button-row button-row-gap-above">
+            <div class="button-row button-row-gap">
                 <a href="/faq" class="button button-black-on-yellow-on-black">See more</a>
             </div>
         </div>
     </main>
-    
+
     {% include our-recent-techswitchers.html %}
 
     {% include companies-weve-worked-with.html %}
 
-    {% include get-in-touch.html content="TechSwitch,<br />Unit 110 Highgate Studios,<br />53-79 Highgate Rd,<br />London<br />NW5 1TL, UK" %}
+    {% include get-in-touch.html content="TechSwitch,<br />Unit 110 Highgate Studios,<br />53-79 Highgate
+    Rd,<br />London<br />NW5 1TL, UK" %}
 
     {% include footer.html %}
 

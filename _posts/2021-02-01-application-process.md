@@ -4,8 +4,6 @@ hero-image-prefix: "apply-hero"
 title: "TechSwitch Application Process"
 ---
 
-## Our Application Process
-
 At <span class="yellow">TechSwitch</span>, our mission is to provide people from all walks of life with the opportunity to become Software Developers, regardless of their background. And our <span class="yellow">Application Process</span> has been designed with this in mind.
 
 We place strong importance on diversity and recruit individuals based on their potential rather than solely on experience. <span class="yellow">Aptitude</span>, <span class="yellow">Attitude</span> and <span class="yellow">Motivation</span> are the three key attributes that we look out for throughout the Application Process.

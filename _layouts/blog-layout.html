@@ -18,29 +18,13 @@
     {% include header.html %}
 
     <main id="maincontent">
-        <div class="hero-box">
-            <picture>
-                <source media="(orientation: landscape) and (min-width: 961px)"
-                    srcset="/images/{{ page.hero-image-prefix }}-1920-1280.jpg" />
-                <source media="(orientation: landscape) and (min-width: 526px)"
-                    srcset="/images/{{ page.hero-image-prefix }}-960-640.jpg" />
-                <source media="(orientation: landscape)" srcset="/images/{{ page.hero-image-prefix }}-525-350.jpg" />
-                <source media="(orientation: portrait) and (min-width: 641px)"
-                    srcset="/images/{{ page.hero-image-prefix }}-1280-1280.jpg" />
-                <source media="(orientation: portrait) and (min-width: 351px)"
-                    srcset="/images/{{ page.hero-image-prefix }}-640-640.jpg" />
-                <source media="(orientation: portrait)" srcset="/images/{{ page.hero-image-prefix }}-350-350.jpg" />
-                <img src="/images/{{ page.hero-image-prefix }}-1920-1280.jpg" style="object-position: 75% 25%;"
-                    alt="" />
-            </picture>
-            <h1 class="tagline-phrase">
-                <span class="tagline">{{ page.title }}</span>
-            </h1>
-        </div>
 
-        <div class="section black-background white-text">
+        <div class="section white-background black-text">
 
             <article class="blog">
+                <h1>
+                    <span class="blog-title">{{ page.title }}</span>
+                </h1>
                 <p class="date">
                     {{ page.date | date: "%a, %e %b %Y" }}
                 </p>
@@ -48,39 +32,40 @@
                 {{ content }}
 
                 {% if page.previous %}
-                    <p class="read-more">
-                        <a href="{{ page.previous.url }}">
-                            Previous article:
-                            {{ page.previous.title }}
-                        </a>
-                    </p>
+                <p class="read-more">
+                    <a href="{{ page.previous.url }}">
+                        Previous article:
+                        {{ page.previous.title }}
+                    </a>
+                </p>
                 {% endif %}
                 {% if page.next %}
-                    <p class="read-more">
-                        <a href="{{ page.next.url }}">
-                            Next article:
-                            {{ page.next.title }}
-                        </a>
-                    </p>
+                <p class="read-more">
+                    <a href="{{ page.next.url }}">
+                        Next article:
+                        {{ page.next.title }}
+                    </a>
+                </p>
                 {% endif %}
-                    <p class="read-more">
-                        <a href="/blog">
-                            Back to blog
-                        </a>
-                    </p>
+                <p class="read-more">
+                    <a href="/blog">
+                        Back to blog
+                    </a>
+                </p>
             </article>
 
         </div>
 
-        <div class="section black-background white-text">
+        <div class="section white-background black-text">
             <div class="button-row">
-                <a href="/application-form" class="button button-yellow-on-black-on-black">Apply Now</a>
+                <a href="/application-form" class="button button-black-on-yellow-on-black">Apply Now</a>
             </div>
         </div>
 
     </main>
 
-    {% include get-in-touch.html content="If you're interested in applying or just want to know more, drop us a line here!" %}
+    {% include get-in-touch.html content="If you're interested in applying or just want to know more, drop us a line
+    here!" %}
 
     {% include footer.html %}
 

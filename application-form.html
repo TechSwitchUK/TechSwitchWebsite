@@ -18,15 +18,15 @@
     <body>
         {% include header.html %}
         <main id="maincontent">
-        <div class="section black-background white-text">
+        <div class="section white-background black-text">
             <h2>Applications Open</h2>
 
-            <p class="medium-width-text white-text margin-between">
+            <p class="medium-width-text black-text margin-between">
                 All information given here will be treated as confidential.
             </p>
 
 
-            <form action="https://online.softwire.com/apply/submit" method="POST" class="medium-width-block-narrow-margins application-form" id="application_form" onsubmit="submitApplicationForm(event);">
+            <form action="https://online.softwire.com/apply/submit" method="POST" class="medium-width-block-narrow-margins grey-background application-form" id="application_form" onsubmit="submitApplicationForm(event);">
 
                 <input type="hidden" name="vacancy" value="57">
                 <input type="hidden" name="inf_appliedBefore" value="No">
@@ -84,7 +84,7 @@
 
                 <div class="cv-upload">
                     CV *
-                    <label for="cv_fileUpload" id="cv_fileUpload_label" class="button button-yellow-on-black-on-black">Choose file +</label>
+                    <label for="cv_fileUpload" id="cv_fileUpload_label" class="button button-black-on-yellow-on-black">Choose file +</label>
                     <input type="file" id="cv_fileUpload" name="cv_fileUpload" onchange="cvFileUploadChanged();">
                     <span id="cv_filename">No file chosen</span>
                 </div>

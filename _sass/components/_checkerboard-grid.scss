@@ -20,7 +20,7 @@
     @media (min-width: 601px) {
         .row {
             width: calc(100% - 40px);
-            max-width: 960px;
+            max-width: 1550px;
     
             display: flex;
             justify-content: space-between;
@@ -28,7 +28,7 @@
     }
 
     &.grid-no-gap .row {
-        background-color: #181818;
+        background-color: #F0F0F0;
     }
 
     picture {
@@ -68,7 +68,8 @@
             position: relative;
         }
         .text h2 {
-            color: #ffffff;
+            color: #000000;
+            text-transform: uppercase;
         }
     }
 
@@ -90,18 +91,17 @@
     @media (max-width: 600px) {
         .text h2 {
             margin: 0;
-            position: absolute;
-            left: 0;
-            bottom: 100%;
             padding: 10px;
     
             font-size: 8vw;
+            text-transform: uppercase;
         }
     }
     @media (min-width: 601px) {
         .text h2 {
             font-size: 2rem;
             margin-top: 0;
+            text-transform: uppercase;
         }
     }
     

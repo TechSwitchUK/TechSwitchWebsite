@@ -12,15 +12,14 @@
     </label>
     <nav>
         <a href="/" {% if page.url == "/" %} class="selected" {% endif %} >Home</a>
+        <a href="/hire" {% if page.url == "/hire.html" %} class="selected" {% endif %} >Hire</a>        
         <div class="nav-parent">
-            <a href="/apply" class="nav-parent {% if page.url == "/apply.html" %} selected{% endif %} ">Apply</a>
+            <a href="/course" class="nav-parent {% if page.url == "/course.html" %} selected{% endif %} ">Course</a>
             <div class="nav-children">
                 <a href="/how-to-apply" {% if page.url == "/how-to-apply.html" %} class="selected" {% endif %} >How to Apply</a>
                 <a href="/application-form" {% if page.url == "/application-form.html" %} class="selected" {% endif %} >Application Form</a>
             </div>
         </div>
-        <a href="/course" {% if page.url == "/course.html" %} class="selected" {% endif %} >Course</a>
-        <a href="/hire" {% if page.url == "/hire.html" %} class="selected" {% endif %} >Hire</a>
         <a href="/about" {% if page.url == "/about.html" %} class="selected" {% endif %} >About</a>
         <a href="/blog" {% if page.url == "/blog.html" %} class="selected" {% endif %} >Blog</a>
         <a href="/faq.html" {% if page.url == "/faq.html" %} class="selected" {% endif %} >FAQ</a>

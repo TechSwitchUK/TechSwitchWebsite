@@ -16,7 +16,7 @@
         outline: none;
     }
     input::placeholder, textarea::placeholder {
-        color: #ffffff;
+        color: #000000;
     }
 
     .two-cols {
@@ -115,7 +115,8 @@
     }
 
     select.application-form-field {
-        background-color: #181818;
+        background-color: #ffffff;
+        border: 1px solid #ffc100;
     }
 
     select option[disabled] {

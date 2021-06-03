@@ -11,18 +11,25 @@
         padding: 30px 20px;
     }
 
-    background-color: #181818;
+    background-color: #f0f0f0;
 
     font-size: 1rem;
     line-height: 1.5;
 
+    .blog-title {
+        font-size: 60px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
     h2 {
         font-size: 2rem;
-        color: #ffc100;
+        color: #000000;
     }
 
     .yellow {
-        color: #ffc100;
+        color: #000000;
+        text-transform: uppercase;
     }
 
     .read-more {

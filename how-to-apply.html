@@ -24,30 +24,36 @@
         <div class="hero-box">
             <picture>
                 <source media="(orientation: landscape) and (min-width: 961px)"
-                    srcset="/images/course-hero-1920-1280.jpg" />
+                    srcset="/images/hire-hero-1920-1280.jpg" />
                 <source media="(orientation: landscape) and (min-width: 526px)"
-                    srcset="/images/course-hero-960-640.jpg" />
-                <source media="(orientation: landscape)" srcset="/images/course-hero-525-350.jpg" />
+                    srcset="/images/hire-hero-960-640.jpg" />
+                <source media="(orientation: landscape)" srcset="/images/hire-hero-525-350.jpg" />
                 <source media="(orientation: portrait) and (min-width: 641px)"
-                    srcset="/images/course-hero-1280-1280.jpg" />
-                <source media="(orientation: portrait) and (min-width: 351px)"
-                    srcset="/images/course-hero-640-640.jpg" />
-                <source media="(orientation: portrait)" srcset="/images/course-hero-350-350.jpg" />
-                <img src="/images/course-hero-1920-1280.jpg" style="object-position: 75% 25%;"
-                    alt="Trainer demonstrating agile software development to learners on the bootcamp." />
+                    srcset="/images/hire-hero-1280-1280.jpg" />
+                <source media="(orientation: portrait) and (min-width: 351px)" srcset="/images/hire-hero-640-640.jpg" />
+                <source media="(orientation: portrait)" srcset="/images/hire-hero-350-350.jpg" />
+                <img src="/images/hire-hero-1920-1280.jpg" style="object-position: 70% 65%;"
+                    alt="Learners pairing on a software development exercise at a computer. Woman on the left, man on the right." />
+
             </picture>
-            <h1 class="tagline-phrase">
-                <span class="tagline">How to apply to TechSwitch</span>
-            </h1>
-        </div>
-        <div class="button-row float-over-hero-image">
-            <a href="/application-form" class="button button-black-on-yellow-on-black">Application Form</a>
+            <div class="full-page-header">
+                <h1 class="tagline-phrase">
+                    <span class="tagline">How to apply to TechSwitch</span>
+                </h1>
+                <div class="tagline-phrase">
+                    <span class="tagline-medium">Interested in applying to the next course? Here is everything you need
+                        to know about our application process.</span>
+                </div>
+                <div class="button-row button-row-gap-above">
+                    <a href="/apply" class="button button-black-on-yellow-on-black">Application Form</a>
+                </div>
+            </div>
         </div>
 
 
-        <div class="section yellow-background black-text">
+        <div class="section grey-background black-text">
             <h2>The Application Form</h2>
-            <div class="medium-width-text black-text">
+            <div class="medium-width-text">
                 <p>As part of the application form we will ask you to include a cover letter and CV.</p>
                 <p>Your CV should give us a general idea of your background and previous experience as well as if you
                     have had any experience with coding yourself e.g. an online course, following free tutorials or
@@ -57,10 +63,10 @@
             </div>
         </div>
 
-        <div class="section black-background white-text">
+        <div class="section white-background black-text">
             <h2>Online Tests</h2>
 
-            <div class="medium-width-text white-text">
+            <div class="medium-width-text">
                 <p>The next stage of the application process is to take a series of online tests. You will be able to
                     take
                     these at any time and in any order.
@@ -80,14 +86,14 @@
 
                 <div class="button-row button-row-gap-above">
                     <a href="/static/TechSwitch_Javascript_Pre-Reading.pdf"
-                        class="button button-yellow-on-black-on-black" target="_blank">Windows</a>
+                        class="button button-black-on-yellow-on-black" target="_blank">Windows</a>
                     <a href="/static/TechSwitch_Javascript_Pre-Reading_-_Mac.pdf"
-                        class="button button-yellow-on-black-on-black" target="_blank">Mac</a>
+                        class="button button-black-on-yellow-on-black" target="_blank">Mac</a>
                 </div>
             </div>
         </div>
 
-        <div class="section yellow-background black-text">
+        <div class="section grey-background black-text">
             <h2>Interview Stage</h2>
             <div class="medium-width-text black-text">
                 <p>The final stage of the application process is the interview.</p>
@@ -99,12 +105,12 @@
             </div>
         </div>
 
-        <div class="section black-background white-text">
+        <div class="section white-background black-text">
 
             <h2>Ready to apply for our next cohort?</h2>
 
             <div class="button-row button-row-gap-above">
-                <a href="/application-form" class="button button-yellow-on-black-on-black">Apply here</a>
+                <a href="/application-form" class="button button-black-on-yellow-on-black">Apply here</a>
             </div>
         </div>
 
@@ -112,7 +118,8 @@
 
     </main>
 
-    {% include get-in-touch.html content="If you're interested in applying or just want to know more, drop us a line here!" %}
+    {% include get-in-touch.html content="If you're interested in applying or just want to know more, drop us a line
+    here!" %}
 
     {% include footer.html %}
 

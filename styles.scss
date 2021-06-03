@@ -8,11 +8,12 @@
 @import 'components/footer';
 @import 'components/hero-box';
 @import 'components/checkerboard-grid';
-@import 'components/picture-name-quote';
 @import 'components/our-team';
 @import 'components/contact-us-form';
 @import 'components/two-columns';
 @import 'components/companies-weve-worked-with';
+@import 'components/testimonials';
+@import 'components/hero-banner';
 
 @import 'sections-and-colours';
 @import 'buttons';
@@ -20,6 +21,7 @@
 
 @import 'pages/application-form';
 @import 'pages/blog';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap');
 
 
 
@@ -45,6 +47,7 @@ p.margin-between {
 
 h3 {
     font-size: 1.7rem;
+    text-transform: uppercase;
 }
 
 .map {
