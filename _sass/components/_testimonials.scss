@@ -1,17 +1,35 @@
+@media (min-width: 481px) {
+  .column-container {
+    margin: 50px;
+  }
+}
+
 .column-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  
-  padding: 50px;
-  margin: 50px;
+  // align-items: center;
+  align-items: flex-start;
+  padding: 25px;
   list-style: none;
 }
 
+@media (min-width: 961px) {
+  .column-item {
+    max-width: 40%;
+  }
+}
+
+// Length of text in 3 columns *only* works on really rather large screens
+@media (min-width: 1551px) {
+  .column-item {
+    max-width: 30%;
+  }
+}
+
 .column-item {
-  padding: 5px;
-  max-width: 20%;
-  margin-top: 10px; 
+  padding: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -20,6 +38,6 @@
 }
 
 .quotation-mark {
-  content: '\201D'; 
+  content: '\201D';
   color: #000000;
 }

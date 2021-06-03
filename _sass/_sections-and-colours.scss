@@ -1,13 +1,12 @@
-
 @media (max-width: 1000px) {
     .section {
         padding: 5vw 0;
     }
 }
- @media (min-width: 1001px) {
-     .section {
+@media (min-width: 1001px) {
+    .section {
         // padding: 50px 0;
-     }
+    }
 }
 
 .section > h2 {
@@ -16,8 +15,6 @@
     padding: 100px 20px;
     text-transform: uppercase;
 }
-
-
 
 .black-text {
     color: #181818;
