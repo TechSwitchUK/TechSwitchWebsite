@@ -12,8 +12,15 @@
 .section > h2 {
     text-align: center;
     font-size: 2rem;
-    padding: 100px 20px;
     text-transform: uppercase;
+
+    @media (max-width: 600px) {
+        padding: 0 20px;
+    }
+
+    @media (min-width: 601px) {
+        padding: 100px 20px;
+    }    
 }
 
 .black-text {
@@ -39,30 +46,35 @@
 }
 
 
-@media (max-width: 600px) {
-    .full-page-header {
-    padding: 150px 150px;
+.full-page-header {
     background-color: #F0F0F0;
     color: #000000;
     text-align: center;
-    }
-}
 
-@media (min-width: 601px) {
-    .full-page-header {
+    @media (max-width: 600px) {
+        padding: 10px 10px;
+    }
+
+    @media (min-width: 601px) {
         padding: 150px 150px;
-        background-color: #F0F0F0;
-        color: #000000;
-        text-align: center;
         margin: 150px;
     }
 }
+
 .text-no-image {
-    padding: 100px 150px;
     background-color: #F0F0F0;
     color: #000000;
     text-align: left;
-    margin: 50px 100px
+
+    @media (max-width: 600px) {
+        padding: 10px 10px;
+        margin: 50px 20px
+    }
+
+    @media (min-width: 601px) {
+        padding: 100px 150px;
+        margin: 50px 100px
+    }
 }
 
 .uppercase {
