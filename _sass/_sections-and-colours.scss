@@ -53,9 +53,15 @@
 
     @media (max-width: 600px) {
         padding: 10px 10px;
+        margin: 5px
     }
 
-    @media (min-width: 601px) {
+    @media (min-width: 601px) and (max-width: 1000px) {
+        padding: 10px 20px;
+        margin: 20px;
+    }
+
+    @media (min-width: 1001px) {
         padding: 150px 150px;
         margin: 150px;
     }
@@ -71,7 +77,12 @@
         margin: 50px 20px
     }
 
-    @media (min-width: 601px) {
+    @media (min-width: 601px) and (max-width: 1000px) {
+        padding: 50px 50px;
+        margin: 50px 50px
+    }
+
+    @media (min-width: 1001px) {
         padding: 100px 150px;
         margin: 50px 100px
     }
