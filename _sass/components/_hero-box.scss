@@ -73,6 +73,11 @@
         font-weight: 300;
         text-transform: uppercase;
     }
+    @media (max-width: 600px) {
+        .tagline-medium {
+            font-size: max(16px, 4vw);
+        }
+    }
     @media (min-aspect-ratio: 4/3) {
         span {
             font-size: 6vw;
