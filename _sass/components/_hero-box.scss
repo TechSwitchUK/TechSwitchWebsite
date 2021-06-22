@@ -73,6 +73,19 @@
         font-weight: 300;
         text-transform: uppercase;
     }
+    @media (max-width: 600px) {
+        .tagline-medium {
+            font-size: max(16px, 4vw);
+        }
+    }
+    @media (max-width: 400px) {
+        .tagline {
+            font-size: max(24px, 6vw);
+        }
+        .tagline-phrase {
+            margin: 5px;
+        }
+    }
     @media (min-aspect-ratio: 4/3) {
         span {
             font-size: 6vw;
