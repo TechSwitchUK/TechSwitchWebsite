@@ -1,0 +1,112 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Make a career change into tech with our 12-week software development bootcamp.">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="/contact-form.js" async></script>
+    <script src="/console-message.js" async></script>
+
+    <title>Course | TechSwitch</title>
+
+    {% include analytics.html %}
+</head>
+
+<body>
+    {% include header.html %}
+    <main id="maincontent">
+        <div class="section white-background hero-banner grid-no-gap">
+            <div class="row">
+                <div class="text black-text grey-background">
+                    <h1>Closing the diversity gap</h1>
+                    <div class="button-row button-row-gap-above">
+                        <a href="/how-to-apply" class="button button-black-on-yellow-on-black">How to Apply</a>
+                        <a href="/application-form.html" class="button button-black-on-yellow-on-black">Application
+                            Form</a>
+                    </div>
+                </div>
+                <picture>
+                    <source media="(orientation: landscape) and (min-width: 961px)"
+                        srcset="/images/diversity-hero.jpg" />
+                    <source media="(orientation: landscape) and (min-width: 526px)"
+                        srcset="/images/diversity-hero.jpg" />
+                    <source media="(orientation: landscape)" srcset="/images/diversity-hero.jpg" />
+                    <source media="(orientation: portrait) and (min-width: 641px)"
+                        srcset="/images/diversity-hero.jpg" />
+                    <source media="(orientation: portrait) and (min-width: 351px)"
+                        srcset="/images/diversity-hero.jpg" />
+                    <source media="(orientation: portrait)" srcset="/images/diversity-hero.jpg" />
+                    <img src="/images/diversity-hero.jpg" style="object-position: 75% 25%;"
+                        alt="A video call with all the learners and trainers" />
+                </picture>
+            </div>
+        </div>
+
+        <div class="section white-background">
+            <h2>Our Mission</h2>
+            <p class="significant-text-block">At TechSwitch, we are passionate about closing the diversity gap and
+                tackling the skills shortage within the UK tech sector. ​​Our mission is to provide people from all
+                walks of life with the opportunity to become Software Developers, regardless of their background.</p>
+            <p class="significant-text-block">We believe anyone can learn to code.</p>
+
+            <div class="button-row button-row-gap-above">
+                <a href="/application-form.html" class="button button-black-on-yellow-on-black">Apply Now</a>
+            </div>
+        </div>
+
+        <div class="section white-background checkerboard-grid grid-no-gap grid-text-first">
+            <div class="row">
+                <picture>
+                    <source media="(min-width: 601px)" srcset="/images/diversity-stats-800.jpg" />
+                    <img src="/images/diversity-stats-560-187.jpg"
+                        alt="Graphic reading 'TechSwitchers Are: 74% Women, 48% Minority Ethnic, 87% Career Changers and 30% Returners.'" />
+                </picture>
+                <div class="text black-text grey-background">
+                    <h2>Diversity in tech</h2>
+                    <p>The UK Tech Sector is growing at a remarkable rate, employing 2.93M people, with 40% growth in
+                        the last two years. However, it continues to suffer from significant diversity challenges.</p>
+                    <p>Only 19% of tech roles in the UK are currently held by Women</p>
+                    <p>Black, Asian and Minority Ethnic tech workers account for only 18%.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <picture>
+                    <source media="(min-width: 601px)" srcset="/images/watching-presentation-800.jpg" />
+                    <img src="/images/watching-presentation-letterbox-560-187.jpg" style="object-position: 81% center;"
+                        alt="" />
+                    <!-- alt="" because this image is just for decoration -->
+                </picture>
+                <div class="text black-text grey-background">
+                    <h2>Making tech careers more accessible </h2>
+                    <p>We have made a few changes to our model in order to achieve more meaningful results in this area.
+                        Unlike the majority of bootcamps in the market, we do not charge our learners any fees for the
+                        training. By adopting this approach, we believe it reduces barriers to entry, making tech
+                        careers more accessible, and attracts a greater diversity of candidates.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section white-background black-text">
+
+            <h2>Where could your tech career take you?</h2>
+
+            <div class="button-row button-row-gap-above">
+                <a href="/application-form" class="button button-black-on-yellow-on-black">Apply here</a>
+            </div>
+        </div>
+    </main>
+
+    {% include get-in-touch.html content="If you're interested in applying or just want to know more, drop us a line
+    here!" %}
+
+    {% include footer.html %}
+
+</body>
+
+</html>
