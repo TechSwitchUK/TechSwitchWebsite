@@ -11,8 +11,7 @@
         <span class="menu-line"></span>
     </label>
     <nav>
-        <a href="/" {% if page.url == "/" %} class="selected" {% endif %} >Home</a>
-        <a href="/hire" {% if page.url == "/hire.html" %} class="selected" {% endif %} >Hire</a>        
+        <a href="/" {% if page.url == "/" %} class="selected" {% endif %} >Home</a>   
         <div class="nav-parent">
             <a href="/course" class="nav-parent {% if page.url == "/course.html" %} selected{% endif %} ">Course</a>
             <div class="nav-children">
@@ -20,6 +19,7 @@
                 <a href="/application-form" {% if page.url == "/application-form.html" %} class="selected" {% endif %} >Application Form</a>
             </div>
         </div>
+        <a href="/hire" {% if page.url == "/hire.html" %} class="selected" {% endif %} >Hire</a>  
         <a href="/diversity" {% if page.url == "/diversity.html" %} class="selected" {% endif %} >Diversity</a>
         <a href="/about" {% if page.url == "/about.html" %} class="selected" {% endif %} >About</a>
         <a href="/blog" {% if page.url == "/blog.html" %} class="selected" {% endif %} >Blog</a>
