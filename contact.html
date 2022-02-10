@@ -54,13 +54,13 @@
                     <p><a href="mailto:info@techswitch.co.uk">info@techswitch.co.uk</a></p>
                     <p><a href="tel:+442039283005">02039283005</a></p>
 
-                    <div class="contact-us-form" id="contact-us-form">
-                        <input type="text" id="contact-us-form-name" placeholder="Name" aria-describedby="contact-us-title" />
-                        <input type="email" id="contact-us-form-email" placeholder="Email" aria-describedby="contact-us-title" />
-                        <textarea rows="6" id="contact-us-form-message" placeholder="Message" aria-describedby="contact-us-title"></textarea>
-                        <button type="button" class="spinner" onclick="submitContactUsForm();" aria-describedby="contact-us-title">Send</button>
+                    <form class="contact-us-form" id="contact-us-form" action="" onsubmit="submitForm()">
+                        <input required type="text" id="contact-us-form-name" placeholder="Name" aria-describedby="contact-us-title" />
+                        <input required type="email" id="contact-us-form-email" placeholder="Email" aria-describedby="contact-us-title" />
+                        <textarea required rows="6" id="contact-us-form-message" placeholder="Message" aria-describedby="contact-us-title"></textarea>
+                        <input type="submit" class="submit-button spinner" value="Send" aria-describedby="contact-us-title"/>
                         <div class="error-message">Sorry, that didn't work.<br aria-hidden="true" />Please try emailing us at <a href="mailto:info@techswitch.co.uk">info@techswitch.co.uk</a></div>
-                    </div>
+                    </form>
                 </div>
                 <div>
                     <iframe
@@ -75,4 +75,10 @@
         {% include footer.html %}
 
     </body>
+    <script>
+        function submitForm() {
+            submitContactUsForm();
+            return false
+        }
+    </script>
 </html>
