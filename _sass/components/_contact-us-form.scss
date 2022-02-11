@@ -18,7 +18,7 @@
         color: #000000;
     }
     
-    .submit-button {
+    button {
         display: block;
         width: 100px;
         margin: auto;
@@ -29,10 +29,10 @@
         background: none;
         border: 1px solid #000000;
     }
-    &.sending .submit-button, &.success .submit-button, &.error .submit-button {
+    &.sending button, &.success button, &.error button {
         color: transparent;
     }
-    .submit-button::after {
+    button::after {
         content: '';
         position: absolute;
         width: 20px;
@@ -40,7 +40,7 @@
         left: calc(50% - 10px);
         top: calc(50% - 11px);
     }
-    &.sending .submit-button::after {
+    &.sending button::after {
         border: 2px solid #000000;
         border-right: none;
         border-bottom: none;
@@ -50,11 +50,11 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
-    &.success .submit-button::after {
+    &.success button::after {
         content: '\2714';  // Unicode Tick: ✔️
         color: #000000;
     }
-    &.error .submit-button::after {
+    &.error button::after {
         content: '\274C';  // Unicode Cross: ❌
         color: #000000;
     }
