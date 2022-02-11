@@ -58,7 +58,10 @@
                         <input required type="text" id="contact-us-form-name" placeholder="Name" aria-describedby="contact-us-title" />
                         <input required type="email" id="contact-us-form-email" placeholder="Email" aria-describedby="contact-us-title" />
                         <textarea required rows="6" id="contact-us-form-message" placeholder="Message" aria-describedby="contact-us-title"></textarea>
-                        <input type="submit" class="submit-button spinner" value="Send" aria-describedby="contact-us-title"/>
+                        <div class="submit-content-container" style="position: relative">
+                            <input id="contact-us-submit" type="submit" class="submit-button" value="" aria-describedby="contact-us-title"/>
+                            <div class="submit-content spinner">Send</div>
+                        </div>
                         <div class="error-message">Sorry, that didn't work.<br aria-hidden="true" />Please try emailing us at <a href="mailto:info@techswitch.co.uk">info@techswitch.co.uk</a></div>
                     </form>
                 </div>
