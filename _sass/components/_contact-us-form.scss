@@ -17,8 +17,20 @@
     input::placeholder, textarea::placeholder {
         color: #000000;
     }
-    
-    button {
+
+    .submit-button {
+        position: absolute;
+        z-index: 99;
+        background: transparent;
+        color: transparent;
+        border: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .submit-content-container {
         display: block;
         width: 100px;
         margin: auto;
@@ -29,10 +41,16 @@
         background: none;
         border: 1px solid #000000;
     }
-    &.sending button, &.success button, &.error button {
+    .submit-content {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &.sending .submit-content, &.success .submit-content, &.error .submit-content {
         color: transparent;
     }
-    button::after {
+    .submit-content::after {
         content: '';
         position: absolute;
         width: 20px;
@@ -40,7 +58,7 @@
         left: calc(50% - 10px);
         top: calc(50% - 11px);
     }
-    &.sending button::after {
+    &.sending .submit-content::after {
         border: 2px solid #000000;
         border-right: none;
         border-bottom: none;
@@ -50,11 +68,11 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
-    &.success button::after {
+    &.success .submit-content::after {
         content: '\2714';  // Unicode Tick: ✔️
         color: #000000;
     }
-    &.error button::after {
+    &.error .submit-content::after {
         content: '\274C';  // Unicode Cross: ❌
         color: #000000;
     }
