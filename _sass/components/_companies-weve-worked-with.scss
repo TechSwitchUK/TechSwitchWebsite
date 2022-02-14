@@ -1,21 +1,20 @@
-
 .companies-weve-worked-with {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 70px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
 
-    picture {
-        margin: 20px;
-    }
+  picture {
+    margin: 20px;
+  }
 
-    h2 {
-        background-color: #000000;
-    }
-    
-    img {
-        width: 100%;
-    }
+  h2 {
+    background-color: #000000;
+  }
+
+  img {
+    width: 100%;
+  }
 }

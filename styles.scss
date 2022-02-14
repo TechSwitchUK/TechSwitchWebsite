@@ -1,84 +1,80 @@
 ---
 ---
 
-@import 'general/fonts';
-@import 'general/reset-and-basic';  
+@import "general/fonts";
+@import "general/reset-and-basic";
 
-@import 'components/header';
-@import 'components/footer';
-@import 'components/hero-box';
-@import 'components/checkerboard-grid';
-@import 'components/our-team';
-@import 'components/contact-us-form';
-@import 'components/two-columns';
-@import 'components/companies-weve-worked-with';
-@import 'components/testimonials';
-@import 'components/hero-banner';
+@import "components/header";
+@import "components/footer";
+@import "components/hero-box";
+@import "components/checkerboard-grid";
+@import "components/our-team";
+@import "components/contact-us-form";
+@import "components/two-columns";
+@import "components/companies-weve-worked-with";
+@import "components/testimonials";
+@import "components/hero-banner";
 
-@import 'sections-and-colours';
-@import 'buttons';
-@import 'medium-width-text-and-block';
+@import "sections-and-colours";
+@import "buttons";
+@import "medium-width-text-and-block";
 
-@import 'pages/application-form';
-@import 'pages/blog';
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap');
-
-
+@import "pages/application-form";
+@import "pages/blog";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap");
 
 /* TODO: NEED TO DECIDE WHERE TO PUT ALL THIS */
 hr {
-    border: 1px solid #ffc100;
-    margin: 30px auto;
+  border: 1px solid #ffc100;
+  margin: 30px auto;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 /* For the application form hidden elements it needs to be this specific or it will be overriden */
 .application-form .application-form-field.hidden {
-    display: none;
+  display: none;
 }
 
 /* TODO: This is breaking things (e.g. the "Contact Us" bit on each page has too much spacing now */
 p.margin-between {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
-    font-size: 1.7rem;
-    text-transform: uppercase;
+  font-size: 1.7rem;
+  text-transform: uppercase;
 }
 
 .map {
-    width: 100%;
-    height: 450px;
-    max-height: 100vw;
+  width: 100%;
+  height: 450px;
+  max-height: 100vw;
 
-    border: 0;
-    filter: grayscale(1);
+  border: 0;
+  filter: grayscale(1);
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 ul {
-    margin: 0;
-    padding-left: 20px;
+  margin: 0;
+  padding-left: 20px;
 
-    li {
-        padding: 5px 0;
-    }
+  li {
+    padding: 5px 0;
+  }
 }
 
 .text-only {
-    text-align: left;
+  text-align: left;
 }
-
-

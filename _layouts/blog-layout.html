@@ -1,74 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Make a career change into tech with our 12-week software development bootcamp."
+    />
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Make a career change into tech with our 12-week software development bootcamp.">
-
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
     <script src="/contact-form.js" async></script>
     <script src="/console-message.js" async></script>
 
     <title>{{ page.title }} | Blog | TechSwitch</title>
 
     {% include analytics.html %}
-</head>
+  </head>
 
-<body>
+  <body>
     {% include header.html %}
 
     <main id="maincontent">
+      <div class="section white-background black-text">
+        <article class="blog">
+          <h1>
+            <span class="blog-title">{{ page.title }}</span>
+          </h1>
+          <p class="date">{{ page.date | date: "%a, %e %b %Y" }}</p>
 
-        <div class="section white-background black-text">
+          {{ content }} {% if page.previous %}
+          <p class="read-more">
+            <a href="{{ page.previous.url }}">
+              Previous article: {{ page.previous.title }}
+            </a>
+          </p>
+          {% endif %} {% if page.next %}
+          <p class="read-more">
+            <a href="{{ page.next.url }}">
+              Next article: {{ page.next.title }}
+            </a>
+          </p>
+          {% endif %}
+          <p class="read-more">
+            <a href="/blog"> Back to blog </a>
+          </p>
+        </article>
+      </div>
 
-            <article class="blog">
-                <h1>
-                    <span class="blog-title">{{ page.title }}</span>
-                </h1>
-                <p class="date">
-                    {{ page.date | date: "%a, %e %b %Y" }}
-                </p>
-
-                {{ content }}
-
-                {% if page.previous %}
-                <p class="read-more">
-                    <a href="{{ page.previous.url }}">
-                        Previous article:
-                        {{ page.previous.title }}
-                    </a>
-                </p>
-                {% endif %}
-                {% if page.next %}
-                <p class="read-more">
-                    <a href="{{ page.next.url }}">
-                        Next article:
-                        {{ page.next.title }}
-                    </a>
-                </p>
-                {% endif %}
-                <p class="read-more">
-                    <a href="/blog">
-                        Back to blog
-                    </a>
-                </p>
-            </article>
-
+      <div class="section white-background black-text">
+        <div class="button-row">
+          <a
+            href="/application-form"
+            class="button button-black-on-yellow-on-black"
+            >Apply Now</a
+          >
         </div>
-
-        <div class="section white-background black-text">
-            <div class="button-row">
-                <a href="/application-form" class="button button-black-on-yellow-on-black">Apply Now</a>
-            </div>
-        </div>
-
+      </div>
     </main>
 
-    {% include get-in-touch.html content="If you're interested in applying or just want to know more, drop us a line
-    here!" %}
-
-    {% include footer.html %}
-
-</body>
-
+    {% include get-in-touch.html content="If you're interested in applying or
+    just want to know more, drop us a line here!" %} {% include footer.html %}
+  </body>
 </html>
