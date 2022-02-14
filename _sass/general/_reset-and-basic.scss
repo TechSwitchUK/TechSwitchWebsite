@@ -1,39 +1,39 @@
-
 * {
-    box-sizing: border-box;
-    font-family: inherit;
+  box-sizing: border-box;
+  font-family: inherit;
 }
 
-html, body {
-    width: 100%;
+html,
+body {
+  width: 100%;
 }
 html {
-    font-size: 100%;
-    height: 100%;
+  font-size: 100%;
+  height: 100%;
 }
 body {
-    margin: 0;
-    font-family: 'Josefin Sans';
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  font-family: "Josefin Sans";
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .visually-hidden {
-    height: 1px;
-    width: 1px;
-    position: absolute;
-    clip: rect(0 0 0 0);
-    border: 0;
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  border: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
 }

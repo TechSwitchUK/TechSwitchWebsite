@@ -1,109 +1,108 @@
 @media (max-width: 1000px) {
-    .section {
-        padding: 5vw 0;
-    }
+  .section {
+    padding: 5vw 0;
+  }
 }
 @media (min-width: 1001px) {
-    .section {
-        padding: 50px 0;
-    }
+  .section {
+    padding: 50px 0;
+  }
 }
 
 .section > h2 {
-    text-align: center;
-    font-size: 2rem;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
 
-    @media (max-width: 600px) {
-        padding: 0 20px;
-    }
+  @media (max-width: 600px) {
+    padding: 0 20px;
+  }
 
-    @media (min-width: 601px) {
-        padding: 50px 20px;
-    }    
+  @media (min-width: 601px) {
+    padding: 50px 20px;
+  }
 }
 
 .black-text {
-    color: #181818;
+  color: #181818;
 }
 .white-text {
-    color: #ffffff;
+  color: #ffffff;
 }
 .yellow-background {
-    background-color: #ffc100;
+  background-color: #ffc100;
 }
 .grey-background {
-    background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 .black-background {
-    background-color: #000000;
+  background-color: #000000;
 }
 .white-background {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 .image-background {
-    background-image: url("/images/homepage-hero-1920-1280.jpg");
+  background-image: url("/images/homepage-hero-1920-1280.jpg");
 }
 
-
 .full-page-header {
-    background-color: #F0F0F0;
-    color: #000000;
-    text-align: center;
+  background-color: #f0f0f0;
+  color: #000000;
+  text-align: center;
 
-    @media (max-width: 600px) {
-        padding: 10px 10px;
-        margin: 5px
-    }
+  @media (max-width: 600px) {
+    padding: 10px 10px;
+    margin: 5px;
+  }
 
-    @media (min-width: 601px) and (max-width: 1000px) {
-        padding: 10px 20px;
-        margin: 20px;
-    }
+  @media (min-width: 601px) and (max-width: 1000px) {
+    padding: 10px 20px;
+    margin: 20px;
+  }
 
-    @media (min-width: 1001px) {
-        padding: 150px 150px;
-        margin: 150px;
-    }
+  @media (min-width: 1001px) {
+    padding: 150px 150px;
+    margin: 150px;
+  }
 }
 
 .text-no-image {
-    background-color: #F0F0F0;
-    color: #000000;
-    text-align: left;
+  background-color: #f0f0f0;
+  color: #000000;
+  text-align: left;
 
-    @media (max-width: 600px) {
-        padding: 10px 10px;
-        margin: 50px 20px
-    }
+  @media (max-width: 600px) {
+    padding: 10px 10px;
+    margin: 50px 20px;
+  }
 
-    @media (min-width: 601px) and (max-width: 1000px) {
-        padding: 50px 50px;
-        margin: 50px 50px
-    }
+  @media (min-width: 601px) and (max-width: 1000px) {
+    padding: 50px 50px;
+    margin: 50px 50px;
+  }
 
-    @media (min-width: 1001px) {
-        padding: 100px 150px;
-        margin: 50px 100px
-    }
+  @media (min-width: 1001px) {
+    padding: 100px 150px;
+    margin: 50px 100px;
+  }
 }
 
 .uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
-.significant-text-block {    
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 0px 100px;
+.significant-text-block {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0px 100px;
 
-    @media (max-width: 600px) {
-        font-size: max(16px, 4vw);
-        padding: 0px;
-    }
+  @media (max-width: 600px) {
+    font-size: max(16px, 4vw);
+    padding: 0px;
+  }
 }
 
 .narrow-height-padding {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
