@@ -67,58 +67,7 @@
     <main id="maincontent">
       <div class="section white-background">
         <div class="medium-width-block black-text grey-background">
-          <h1 id="contact-us-title">Contact us</h1>
-          <p>
-            TechSwitch,<br />
-            Unit 110 Highgate Studios,<br />
-            53-79 Highgate Rd,<br />
-            London<br />
-            NW5 1TL<br />
-            UK
-          </p>
-          <p>
-            <a href="mailto:info@techswitch.co.uk">info@techswitch.co.uk</a>
-          </p>
-          <p><a href="tel:+442039283005">02039283005</a></p>
-
-          <form class="contact-us-form" id="contact-us-form" action="">
-            <input
-              required
-              type="text"
-              id="contact-us-form-name"
-              placeholder="Name"
-              aria-describedby="contact-us-title"
-            />
-            <input
-              required
-              type="email"
-              id="contact-us-form-email"
-              placeholder="Email"
-              aria-describedby="contact-us-title"
-            />
-            <textarea
-              required
-              rows="6"
-              id="contact-us-form-message"
-              placeholder="Message"
-              aria-describedby="contact-us-title"
-            ></textarea>
-            <div class="submit-content-container" style="position: relative">
-              <input
-                id="contact-us-submit"
-                type="submit"
-                class="submit-button"
-                value=""
-                aria-describedby="contact-us-title"
-              />
-              <div class="submit-content spinner">Send</div>
-            </div>
-            <div class="error-message">
-              Sorry, that didn't work.<br aria-hidden="true" />Please try
-              emailing us at
-              <a href="mailto:info@techswitch.co.uk">info@techswitch.co.uk</a>
-            </div>
-          </form>
+          {% include contact-us-form.html %}
         </div>
         <div>
           <iframe
@@ -132,12 +81,5 @@
     </main>
 
     {% include footer.html %}
-    <script>
-      document.getElementById("contact-us-form").onsubmit = function (e) {
-        e.preventDefault();
-        submitContactUsForm();
-        return false;
-      };
-    </script>
   </body>
 </html>
