@@ -1,62 +1,57 @@
-
 /* TWO COLUMNS - for Homepage FAQs */
 .two-columns {
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
-    column-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+  column-gap: 20px;
 
+  @media (max-width: 600px) {
+    column-count: 1;
+  }
+  @media (min-width: 601px) {
+    column-count: 2;
+  }
 
-    @media (max-width: 600px) {
-        column-count: 1;
-    }
-    @media (min-width: 601px) {
-        column-count: 2;
-    }
+  div {
+    break-inside: avoid;
+    padding: 1px;
 
-    div {
-        break-inside: avoid;
-        padding: 1px;
-
-        h3 {
-            font-size: 1.5rem
-        }
-    
-        p {
-            font-size: 1rem
-        }
+    h3 {
+      font-size: 1.5rem;
     }
 
+    p {
+      font-size: 1rem;
+    }
+  }
 }
 
 .three-columns {
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 20px;
-    column-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+  column-gap: 20px;
 
+  @media (max-width: 600px) {
+    column-count: 1;
+  }
+  @media (min-width: 601px) {
+    column-count: 2;
+  }
+  @media (min-width: 601px) {
+    column-count: 3;
+  }
 
-    @media (max-width: 600px) {
-        column-count: 1;
-    }
-    @media (min-width: 601px) {
-        column-count: 2;
-    }
-    @media (min-width: 601px) {
-        column-count: 3;
-    }
+  div {
+    break-inside: avoid;
+    padding: 1px;
 
-    div {
-        break-inside: avoid;
-        padding: 1px;
-
-        h3 {
-            font-size: 1.5rem
-        }
-    
-        p {
-            font-size: 1rem
-        }
+    h3 {
+      font-size: 1.5rem;
     }
 
+    p {
+      font-size: 1rem;
+    }
+  }
 }
