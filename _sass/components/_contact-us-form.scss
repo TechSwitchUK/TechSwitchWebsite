@@ -1,92 +1,90 @@
+
 .contact-us-form {
-  margin: 20px 0;
+    margin: 20px 0;
 
-  input,
-  textarea {
-    display: block;
-    width: 100%;
-    resize: none;
-    margin: 10px 0;
-    padding: 5px;
+    input, textarea {
+        display: block;
+        width: 100%;
+        resize: none;
+        margin: 10px 0;
+        padding: 5px;
 
-    color: #000000;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #000000;
-  }
-  input::placeholder,
-  textarea::placeholder {
-    color: #000000;
-  }
+        color: #000000;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #000000;
+    }
+    input::placeholder, textarea::placeholder {
+        color: #000000;
+    }
 
-  .submit-button {
-    position: absolute;
-    z-index: 99;
-    background: transparent;
-    color: transparent;
-    border: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
+    .submit-button {
+        position: absolute;
+        z-index: 99;
+        background: transparent;
+        color: transparent;
+        border: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
 
-  .submit-content-container {
-    display: block;
-    width: 100px;
-    margin: auto;
-    padding: 10px;
-    position: relative;
+    .submit-content-container {
+        display: block;
+        width: 100px;
+        margin: auto;
+        padding: 10px;
+        position: relative;
 
-    color: #000000;
-    background: none;
-    border: 1px solid #000000;
-  }
-  .submit-content {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-  }
+        color: #000000;
+        background: none;
+        border: 1px solid #000000;
+    }
+    .submit-content {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
 
-  &.sending .submit-content,
-  &.success .submit-content,
-  &.error .submit-content {
-    color: transparent;
-  }
-  .submit-content::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: calc(50% - 10px);
-    top: calc(50% - 11px);
-  }
-  &.sending .submit-content::after {
-    border: 2px solid #000000;
-    border-right: none;
-    border-bottom: none;
-    border-radius: 50%;
-    animation-name: spin;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  &.success .submit-content::after {
-    content: "\2714"; // Unicode Tick: ✔️
-    color: #000000;
-  }
-  &.error .submit-content::after {
-    content: "\274C"; // Unicode Cross: ❌
-    color: #000000;
-  }
+    &.sending .submit-content, &.success .submit-content, &.error .submit-content {
+        color: transparent;
+    }
+    .submit-content::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: calc(50% - 10px);
+        top: calc(50% - 11px);
+    }
+    &.sending .submit-content::after {
+        border: 2px solid #000000;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 50%;
+        animation-name: spin;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    &.success .submit-content::after {
+        content: '\2714';  // Unicode Tick: ✔️
+        color: #000000;
+    }
+    &.error .submit-content::after {
+        content: '\274C';  // Unicode Cross: ❌
+        color: #000000;
+    }
 
-  .error-message {
-    font-size: 0.75rem;
-    text-align: center;
-    visibility: hidden;
-  }
-  &.error .error-message {
-    visibility: visible;
-  }
+    .error-message {
+        font-size: 0.75rem;
+        text-align: center;
+        visibility: hidden;
+    }
+    &.error .error-message {
+        visibility: visible;
+    }
+
 }
