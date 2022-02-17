@@ -45,8 +45,6 @@ function submitApplicationForm(event) {
   isFormValid &= isTextFieldValid("per_primaryTelephone");
   isFormValid &= isTextFieldValid("per_coveringLetter");
 
-  isFormValid &= isRadioFieldValid("add_workPermit");
-
   isFormValid &= isFileUploadFieldValid("cv_fileUpload", "cv_fileUpload_label");
 
   if (!isFormValid) {
