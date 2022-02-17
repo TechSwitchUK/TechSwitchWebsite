@@ -130,49 +130,46 @@
               class="application-form-field"
             />
 
-            <div class="half-width-label">Do you require a work permit? *</div>
-            <div class="half-width-options">
-              <label class="radio-button-label">
-                <input type="radio" name="add_workPermit" value="Yes" />
-                Yes
+            <div style="align-self: flex-start;display: flex;align-items: center">
+              <label style="display: inline-block;">
+                <input type="checkbox" name="add_workPermit" style="width: 1.2rem;height: 1.2rem;cursor: pointer;">
               </label>
-              <label class="radio-button-label">
-                <input type="radio" name="add_workPermit" value="No" checked />
-                No
-              </label>
+              <div class="half-width-label">I require a work permit</div>
             </div>
 
-            <div class="half-width-label">
-              How did you hear about us? (optional)
+            <div class="">
+              <div class="half-width-label">
+                How did you hear about us? (optional)
+              </div>
+              <select
+                      class="application-form-field"
+                      id="inf_howheard"
+                      name="inf_howheard"
+              >
+                <option value="" disabled selected>Please select...</option>
+                <option value="From a friend">From a friend</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Women Returners">Women Returners</option>
+                <option value="Women in Tech">Women in Tech</option>
+                <option value="Working Mums">Working Mums</option>
+                <option value="Technojobs">Technojobs</option>
+                <option value="Online search">Online search (e.g. Google)</option>
+                <option value="Find Your Flex">Find Your Flex</option>
+                <option value="Course Review Site">Course Review Site</option>
+                <option class="other_option" value="Other">
+                  Other (please specify)
+                </option>
+              </select>
+              <div class="show-for-other"></div>
+              <input
+                      type="text"
+                      name="inf_howhearddescription"
+                      id="inf_howhearddescription"
+                      data-js-placeholder="Please specify here..."
+                      placeholder="If other, please specify here..."
+                      class="application-form-field show-for-other"
+              />
             </div>
-            <select
-              class="application-form-field"
-              id="inf_howheard"
-              name="inf_howheard"
-            >
-              <option value="" disabled selected>Please select...</option>
-              <option value="From a friend">From a friend</option>
-              <option value="LinkedIn">LinkedIn</option>
-              <option value="Women Returners">Women Returners</option>
-              <option value="Women in Tech">Women in Tech</option>
-              <option value="Working Mums">Working Mums</option>
-              <option value="Technojobs">Technojobs</option>
-              <option value="Online search">Online search (e.g. Google)</option>
-              <option value="Find Your Flex">Find Your Flex</option>
-              <option value="Course Review Site">Course Review Site</option>
-              <option class="other_option" value="Other">
-                Other (please specify)
-              </option>
-            </select>
-            <div class="show-for-other"></div>
-            <input
-              type="text"
-              name="inf_howhearddescription"
-              id="inf_howhearddescription"
-              data-js-placeholder="Please specify here..."
-              placeholder="If other, please specify here..."
-              class="application-form-field show-for-other"
-            />
           </div>
 
           <hr />
