@@ -61,6 +61,13 @@ function submitApplicationForm(event) {
 
   let applicationForm = document.getElementById("application_form");
   let formData = new FormData(applicationForm);
+
+  // This is needed to keep a consistency between the old form and the new form
+  // with the checkbox rather than radio buttons.
+  // See issue https://github.com/TechSwitchUK/TechSwitchWebsite/issues/6
+  let workPermitNeeded = formData.get("add_workPermit") === "on";
+  formData.set("add_workPermit", workPermitNeeded ? 'Yes' : 'No');
+
   let xhr = new XMLHttpRequest();
   xhr.addEventListener("loadend", xhrLoadEnd);
   xhr.open(applicationForm.method, applicationForm.action, true);
