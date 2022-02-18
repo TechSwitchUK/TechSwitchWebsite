@@ -137,11 +137,11 @@
                     </p>
                 </div>
                 <img
-                    src="/images/angle-trains/AngelTrains-Image4.jpg"
+                    src="/images/angle-trains/AngelTrains-Image1.jpg"
                     alt=""
                 >
             </div>
-            <div class="details-section">
+            <div class="details-section-reversed">
                 <div>
                     <h4 class="title-header">The challenge</h4>
                     <p>
@@ -171,11 +171,11 @@
                 <img
                     style="object-fit: contain;"
                     src="/images/angle-trains/AngelTrains-Image2.jpg"
-                    alt=""
+                    alt="Rail road tracks"
                 />
             </div>
 
-            <div class="details-section-reversed">
+            <div class="details-section">
                 <div>
                     <h4 class="title-header">The TechSwitch solution</h4>
                     <p>
@@ -199,12 +199,12 @@
                 </div>
                 <img
                     style="object-fit: contain;"
-                    src="/images/angle-trains/AngelTrains-Image1.jpg"
+                    src="/images/angle-trains/AngelTrains-Image3.jpg"
                     alt=""
                 />
             </div>
 
-            <div class="details-section">
+            <div class="details-section-reversed">
                 <div>
                     <h4 class="title-header">The impact</h4>
                     <p>
@@ -235,7 +235,7 @@
                 </div>
                 <img
                         style="object-fit: contain;"
-                        src="/images/angle-trains/AngelTrains-Image3.jpg"
+                        src="/images/angle-trains/AngelTrains-Image4.jpg"
                         alt=""
                 />
             </div>
@@ -301,24 +301,26 @@
     .details-section {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        background-color: #f0f0f0;
     }
     .details-section > div, .details-section-reversed > div {
         width: 50%;
-        padding: 2rem 0;
+        padding: 2rem;
     }
     .details-section > img, .details-section-reversed > img {
-        width: 40%;
+        width: 50%;
     }
 
     .details-section-reversed {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 2rem;
         margin-bottom: 2rem;
+        background-color: #f0f0f0;
     }
 
     .opening-section {
@@ -327,13 +329,8 @@
         justify-content: space-around;
     }
 
-    .main-container {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-
     .details-container {
-        margin: 4rem 10rem;
+        margin: 4rem 0;
     }
 
     .offset-title {
@@ -350,7 +347,7 @@
     .headline-container > img {
         width: 50%;
         object-fit: cover;
-        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+        /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
     }
     .headline-container > div {
         width: 50%;
@@ -361,7 +358,7 @@
         .headline-container > img {
             width: 50%;
             height: 300px;
-            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+            /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
         }
     }
 
