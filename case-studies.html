@@ -349,13 +349,20 @@
     }
     .headline-container > img {
         width: 50%;
-        height: 100%;
         object-fit: cover;
         clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
     .headline-container > div {
         width: 50%;
         padding: 2rem;
+    }
+
+    @media (min-width: 1600px) {
+        .headline-container > img {
+            width: 50%;
+            height: 300px;
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
     }
 
     @media (max-width: 1001px) {
