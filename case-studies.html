@@ -64,7 +64,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <main id="maincontent" class="main-container">
-        <h1 style="padding-left: 2.5rem">Making an impact</h1>
+        <h1 style="padding-left: 2.5rem">Making An Impact</h1>
 
         <!-- Top section -->
         <div class="w-full flex flex-col items-center">
@@ -123,7 +123,7 @@
                         Introducing Angel Trains
                     </h4>
                     <p>
-                        <span style="font-style: italic;font-weight: bolder;">
+                        <span>
                             The business owning more than a quarter of UK passenger rolling stock.
                         </span><br/><br/>
                         Anyone who’s travelled on the UK’s rail network since it was privatised,
@@ -143,9 +143,9 @@
             </div>
             <div class="details-section-reversed">
                 <div>
-                    <h4 class="title-header">The challenge</h4>
+                    <h4 class="title-header">The Challenge</h4>
                     <p>
-                        <span style="font-style: italic;font-weight: bolder;">
+                        <span>
                             Boost Angel Trains’ in-house development capability to deliver a strategic,
                             two-year asset-management transformation that would unlock operational efficiencies
                             and lay the groundwork for enhanced analytics.
@@ -169,7 +169,6 @@
                     </p>
                 </div>
                 <img
-                    style="object-fit: contain;"
                     src="/images/angle-trains/AngelTrains-Image2.jpg"
                     alt="Rail road tracks"
                 />
@@ -177,9 +176,9 @@
 
             <div class="details-section">
                 <div>
-                    <h4 class="title-header">The TechSwitch solution</h4>
+                    <h4 class="title-header">The TechSwitch Solution</h4>
                     <p>
-                        <span style="font-style: italic;font-weight: bolder;">
+                        <span>
                             A choice of five candidates from a range of backgrounds.
                         </span><br/><br/>
                         Angel Trains had advertised the role and interviewed a number of candidates,
@@ -198,7 +197,6 @@
                     </p>
                 </div>
                 <img
-                    style="object-fit: contain;"
                     src="/images/angle-trains/AngelTrains-Image3.jpg"
                     alt=""
                 />
@@ -206,9 +204,9 @@
 
             <div class="details-section-reversed">
                 <div>
-                    <h4 class="title-header">The impact</h4>
+                    <h4 class="title-header">The Impact</h4>
                     <p>
-                        <span style="font-style: italic;font-weight: bolder;">
+                        <span>
                             The TechSwitcher got up to speed in less than half the time expected, and
                             has helped accelerate Angel Trains’ journey towards its strategic vision.
                             The success of the first hire means Angel Trains will now be taking on a second
@@ -234,7 +232,6 @@
                     </p>
                 </div>
                 <img
-                        style="object-fit: contain;"
                         src="/images/angle-trains/AngelTrains-Image4.jpg"
                         alt=""
                 />
@@ -281,8 +278,16 @@
         flex-grow: initial;
     }
 
+    h1 {
+        font-size: x-large;
+    }
+
     h3 {
         font-size: initial;
+    }
+
+    img {
+        object-fit: cover;
     }
 
     .container-box > h3, p {
@@ -290,12 +295,14 @@
     }
     .container-box > p {
         padding-top: 0.25rem;
+        font-size: large;
     }
+
 
     .title-header {
         font-size: xx-large;
         font-weight: bold;
-        margin: 0;
+        margin: 0 0 1rem;
     }
 
     .details-section {
@@ -307,10 +314,17 @@
     }
     .details-section > div, .details-section-reversed > div {
         width: 50%;
-        padding: 2rem;
+        padding: 1rem 2rem;
     }
     .details-section > img, .details-section-reversed > img {
         width: 50%;
+    }
+    .details-section > div > p , .details-section-reversed > div > p {
+        font-size: large;
+    }
+    .details-section > div > p > span, .details-section-reversed > div > p > span {
+        font-weight: bolder;
+        font-size: larger;
     }
 
     .details-section-reversed {
@@ -335,50 +349,7 @@
         margin-left: 3rem;
     }
 
-    .headline-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: #f0f0f0;
-    }
-    .headline-container > img {
-        width: 50%;
-        object-fit: cover;
-        /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
-    }
-    .headline-container > div {
-        width: 50%;
-        padding: 2rem;
-    }
-
-    @media (min-width: 1600px) {
-        .headline-container > img {
-            width: 50%;
-            height: 300px;
-            /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
-        }
-    }
-
     @media (max-width: 1001px) {
-        .headline-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            background-color: #f0f0f0;
-            margin-bottom: 4rem;
-        }
-        .headline-container > div {
-            width: 100%;
-            padding: 1rem;
-        }
-        .headline-container > img {
-            width: 100%;
-            clip-path: none;
-            height: 100px;
-            object-fit: cover;
-        }
-
         .details-container {
             margin: 4rem 2rem;
         }
