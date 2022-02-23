@@ -66,18 +66,18 @@
 <!-- End Google Tag Manager (noscript) -->
 
 <main class="main-container" id="maincontent">
-    <div class="flex flex-row items-center justify-between" style="padding-left: 2.5rem;background: #f0f0f0;">
+    <div class="banner-layout bg-light-grey">
         <h1>
             MAKING AN IMPACT
         </h1>
-        <img style="width: 50%" src="/images/angle-trains/Optimized-banner.jpg" alt="Get involved banner">
+        <img src="/images/angle-trains/Optimized-banner.jpg" alt="Get involved banner">
     </div>
 
     <!-- Top section -->
     <div class="w-full flex flex-col items-center" style="margin-top: 3rem">
         <h2 class="headline text-3xl">Angel Trains</h2>
         <div class="opening-section px-4">
-            <div class="container-box">
+            <div class="container-box bg-light-grey">
                 <h3>Challenge</h3>
                 <p>
                     Angel Trains needed to expand its in-house software development capability to deliver a
@@ -86,7 +86,7 @@
                     rolling stock.
                 </p>
             </div>
-            <div class="container-box">
+            <div class="container-box bg-light-grey">
                 <h3>Solution</h3>
                 <p>
                     We provided a choice of high-calibre candidates from a range of backgrounds.
@@ -94,7 +94,7 @@
                     needs, while also enhancing the diversity of its IT team.
                 </p>
             </div>
-            <div class="container-box">
+            <div class="container-box bg-light-grey">
                 <h3>Impact</h3>
                 <p>
                     The TechSwitcher quickly got up to speed, with her first code being used in production
@@ -108,7 +108,7 @@
 
     <!-- Separator -->
     <div class="flex flex-col items-center justify-center items-center" style="margin-top: 4rem;">
-        <p style="font-size: xx-large;font-weight: bold">Read the full story</p>
+        <p class="text-2xl font-bold">Read the full story</p>
         <div style="position: relative;transform: rotate(45deg) translate(-1rem);opacity: 80%">
             <svg fill="white"
                  height="60" style="position: absolute;z-index: 99;top: 0; left: 0;margin-left: -0.5rem;margin-top: -0.5rem;" width="60">
@@ -126,9 +126,11 @@
 
     <!-- Separator -->
     <div class="flex flex-col items-center details-container">
-        <h3 class="headline text-2xl">TechSwitcher helps Angel Trains accelerate delivery of its strategic transformation
-            programme</h3>
-        <div class="details-section flex-row">
+        <h3 class="headline text-2xl">
+            TechSwitcher helps Angel Trains accelerate delivery of its
+            strategic transformation programme
+        </h3>
+        <div class="details-section flex-row bg-light-grey">
             <div class="flex flex-col justify-center">
                 <h4 class="title-header">
                     Introducing Angel Trains
@@ -137,6 +139,7 @@
                         <span>
                             The business owning more than a quarter of UK passenger rolling stock.
                         </span><br/><br/>
+
                     Anyone who’s travelled on the UK’s rail network since it was privatised,
                     may well have been on an Angel Trains carriage.<br/><br/>
                     The business owns and maintains more than a quarter of all UK passenger rolling stock,
@@ -152,7 +155,7 @@
                     src="/images/angle-trains/image1.jpg"
             >
         </div>
-        <div class="details-section flex-row-reverse">
+        <div class="details-section flex-row-reverse bg-light-grey">
             <div class="flex flex-col justify-center">
                 <h4 class="title-header">The Challenge</h4>
                 <p>
@@ -185,13 +188,14 @@
             />
         </div>
 
-        <div class="details-section flex-row">
+        <div class="details-section flex-row bg-light-grey">
             <div class="flex flex-col justify-center">
                 <h4 class="title-header">The TechSwitch Solution</h4>
                 <p>
                         <span>
                             A choice of five candidates from a range of backgrounds.
                         </span><br/><br/>
+
                     Angel Trains had advertised the role and interviewed a number of candidates,
                     but hadn’t found the right fit. Stirling then engaged with TechSwitch:
                     “We spoke to five people who would shortly be finishing the programme, and I was
@@ -214,7 +218,7 @@
             />
         </div>
 
-        <div class="details-section flex-row-reverse">
+        <div class="details-section flex-row-reverse bg-light-grey">
             <div class="flex flex-col justify-center">
                 <h4 class="title-header">The Impact</h4>
                 <p>
@@ -267,6 +271,10 @@
         padding-right: 1rem;
     }
 
+    .bg-light-grey {
+        background: #f0f0f0;
+    }
+
     .w-full {
         width: 100%;
     }
@@ -278,11 +286,6 @@
     .justify-center {
         justify-content: center;
     }
-
-    .justify-between {
-        justify-content: space-between;
-    }
-
     h1 {
         font-size: xxx-large;
         font-weight: initial;
@@ -300,7 +303,6 @@
 
     .container-box {
         padding: 1rem;
-        background-color: #f0f0f0;
         width: 30%;
         flex-grow: initial;
     }
@@ -333,16 +335,10 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 1rem;
-        background-color: #f0f0f0;
     }
 
     .details-section > div {
-        width: 50%;
         padding: 1rem 2rem;
-    }
-
-    .details-section > img {
-        width: 50%;
     }
 
     .details-section > div > p {
@@ -373,6 +369,10 @@
         padding-bottom: 3rem;
     }
 
+    .font-bold {
+        font-weight: bold;
+    }
+
     .text-2xl {
         font-size: xx-large;
     }
@@ -381,7 +381,33 @@
         font-size: xxx-large;
     }
 
+    .banner-layout {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2.5rem;
+    }
+
+    .banner-layout > *, .details-section > * {
+        width: 50%;
+    }
+
     @media (max-width: 1001px) {
+        .banner-layout {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: start;
+            align-items: center;
+            padding-left: 2.5rem;
+        }
+
+        .banner-layout > *, .details-section > * {
+            width: 100%;
+        }
+
         .headline {
             font-weight: bold;
             font-size: x-large;
@@ -418,12 +444,7 @@
             margin-top: 1rem;
         }
 
-        .details-section > img {
-            width: 100%;
-        }
-
         .details-section > div {
-            width: 100%;
             padding-bottom: 2rem;
         }
     }
