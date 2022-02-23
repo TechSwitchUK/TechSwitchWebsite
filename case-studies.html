@@ -66,11 +66,16 @@
 <!-- End Google Tag Manager (noscript) -->
 
 <main class="main-container" id="maincontent">
-    <h1 style="padding-left: 2.5rem">Making An Impact</h1>
+    <div class="flex flex-row items-center justify-between" style="padding-left: 2.5rem;background: #f0f0f0;">
+        <h1>
+            Making An Impact
+        </h1>
+        <img style="width: 50%" src="/images/angle-trains/banner.jpg" alt="">
+    </div>
 
     <!-- Top section -->
-    <div class="w-full flex flex-col items-center">
-        <h2 class="self-start offset-title">Angel Trains</h2>
+    <div class="w-full flex flex-col items-center" style="margin-top: 3rem">
+        <h2 class="headline text-3xl">Angel Trains</h2>
         <div class="opening-section px-4">
             <div class="container-box">
                 <h3>Challenge</h3>
@@ -121,7 +126,7 @@
 
     <!-- Separator -->
     <div class="flex flex-col items-center details-container">
-        <h3 class="headline">TechSwitcher helps Angel Trains accelerate delivery of its strategic transformation
+        <h3 class="headline text-2xl">TechSwitcher helps Angel Trains accelerate delivery of its strategic transformation
             programme</h3>
         <div class="details-section flex-row">
             <div class="flex flex-col justify-center">
@@ -144,7 +149,7 @@
             </div>
             <img
                     alt=""
-                    src="/images/angle-trains/AngelTrains-Image1.jpg"
+                    src="/images/angle-trains/image1.jpg"
             >
         </div>
         <div class="details-section flex-row-reverse">
@@ -176,7 +181,7 @@
             </div>
             <img
                     alt="Rail road tracks"
-                    src="/images/angle-trains/AngelTrains-Image2.jpg"
+                    src="/images/angle-trains/image2.jpg"
             />
         </div>
 
@@ -204,7 +209,7 @@
             </div>
             <img
                     alt=""
-                    src="/images/angle-trains/AngelTrains-Image3.jpg"
+                    src="/images/angle-trains/image3.jpg"
             />
         </div>
 
@@ -239,7 +244,7 @@
             </div>
             <img
                     alt=""
-                    src="/images/angle-trains/AngelTrains-Image4.jpg"
+                    src="/images/angle-trains/image4.jpg"
             />
         </div>
     </div>
@@ -261,10 +266,6 @@
         padding-right: 1rem;
     }
 
-    .self-start {
-        align-self: flex-start;
-    }
-
     .w-full {
         width: 100%;
     }
@@ -277,9 +278,15 @@
         justify-content: center;
     }
 
+    .justify-between {
+        justify-content: space-between;
+    }
 
     h1 {
         font-size: xxx-large;
+        font-weight: initial;
+        text-align: center;
+        width: 50%;
     }
 
     h3 {
@@ -358,16 +365,19 @@
         margin: 5rem 0;
     }
 
-    .offset-title {
-        margin-left: 2.5rem;
-    }
-
     .headline {
         font-weight: bold;
-        font-size: xx-large;
         text-align: center;
         width: 75%;
         padding-bottom: 3rem;
+    }
+
+    .text-2xl {
+        font-size: xx-large;
+    }
+
+    .text-3xl {
+        font-size: xxx-large;
     }
 
     @media (max-width: 1001px) {
