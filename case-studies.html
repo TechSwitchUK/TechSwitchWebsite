@@ -123,7 +123,7 @@
     <div class="flex flex-col items-center details-container">
         <h3 class="headline">TechSwitcher helps Angel Trains accelerate delivery of its strategic transformation
             programme</h3>
-        <div class="details-section">
+        <div class="details-section flex-row">
             <div class="flex flex-col justify-center">
                 <h4 class="title-header">
                     Introducing Angel Trains
@@ -147,7 +147,7 @@
                     src="/images/angle-trains/AngelTrains-Image1.jpg"
             >
         </div>
-        <div class="details-section-reversed">
+        <div class="details-section flex-row-reverse">
             <div class="flex flex-col justify-center">
                 <h4 class="title-header">The Challenge</h4>
                 <p>
@@ -180,7 +180,7 @@
             />
         </div>
 
-        <div class="details-section">
+        <div class="details-section flex-row">
             <div class="flex flex-col justify-center">
                 <h4 class="title-header">The TechSwitch Solution</h4>
                 <p>
@@ -208,7 +208,7 @@
             />
         </div>
 
-        <div class="details-section-reversed">
+        <div class="details-section flex-row-reverse">
             <div class="flex flex-col justify-center">
                 <h4 class="title-header">The Impact</h4>
                 <p>
@@ -313,38 +313,37 @@
         margin: 0 0 1rem;
     }
 
+    .flex-row {
+        flex-direction: row;
+    }
+
+    .flex-row-reverse {
+        flex-direction: row-reverse;
+    }
+
     .details-section {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         margin-bottom: 1rem;
         background-color: #f0f0f0;
     }
 
-    .details-section > div, .details-section-reversed > div {
+    .details-section > div {
         width: 50%;
         padding: 1rem 2rem;
     }
 
-    .details-section > img, .details-section-reversed > img {
+    .details-section > img {
         width: 50%;
     }
 
-    .details-section > div > p, .details-section-reversed > div > p {
+    .details-section > div > p {
         font-size: large;
     }
 
-    .details-section > div > p > span, .details-section-reversed > div > p > span {
+    .details-section > div > p > span {
         font-weight: bolder;
         font-size: larger;
-    }
-
-    .details-section-reversed {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin-bottom: 1rem;
-        background-color: #f0f0f0;
     }
 
     .opening-section {
@@ -412,18 +411,11 @@
             margin-top: 1rem;
         }
 
-        .details-section-reversed {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            margin-top: 1rem;
-        }
-
-        .details-section > img, .details-section-reversed > img {
+        .details-section > img {
             width: 100%;
         }
 
-        .details-section > div, .details-section-reversed > div {
+        .details-section > div {
             width: 100%;
             padding-bottom: 2rem;
         }
