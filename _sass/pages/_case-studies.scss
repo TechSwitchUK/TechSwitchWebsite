@@ -177,7 +177,7 @@
     }
   }
 
-  .banner-layout > *, .details-section > * {
+  .reactive-width {
     width: 50%;
 
     @media (max-width: 1001px) {
