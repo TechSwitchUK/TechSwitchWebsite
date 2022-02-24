@@ -21,9 +21,11 @@
     <li><a href="/terms-of-training.html">Terms of Training</a></li>
   </ul>
   <p class="copyright">
-    © 2021 Softwire Technology Limited. All rights reserved.
+    © <span id="year"></span> Softwire Technology Limited. All rights reserved.
   </p>
   <script type="text/javascript">
+    document.getElementById("year").textContent = new Date().getFullYear().toString();
+
     _linkedin_partner_id = "3977001";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
     window._linkedin_data_partner_ids.push(_linkedin_partner_id);
