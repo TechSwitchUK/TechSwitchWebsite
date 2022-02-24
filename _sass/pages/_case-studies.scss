@@ -1,10 +1,55 @@
 .case-studies {
+  h1, h3, h4, h5, p {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .font-bold {
+    font-weight: bold;
+  }
+
+  .font-bolder {
+    font-weight: bolder;
+  }
+
+  .text-lg {
+    font-size: large;
+  }
+
+  .text-xl {
+    font-size: x-large;
+  }
+
+  .text-2xl {
+    font-size: xx-large;
+  }
+
+  .text-3xl {
+    font-size: xxx-large;
+  }
+
   .flex {
     display: flex;
   }
 
   .flex-col {
     flex-flow: column;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
   }
 
   .px-4 {
@@ -20,26 +65,8 @@
     width: 100%;
   }
 
-  .items-center {
-    align-items: center;
-  }
-
-  .justify-center {
-    justify-content: center;
-  }
-  h1 {
-    font-size: xxx-large;
-    font-weight: initial;
-    text-align: center;
+  .w-1\/2 {
     width: 50%;
-  }
-
-  h3 {
-    font-size: initial;
-  }
-
-  img {
-    object-fit: cover;
   }
 
   .container-box {
@@ -48,19 +75,7 @@
     flex-grow: initial;
   }
 
-  .container-box > h3, p {
-    margin: 0;
-  }
-
-  .container-box > p {
-    padding-top: 0.5rem;
-    font-size: large;
-  }
-
-
   .title-header {
-    font-size: xx-large;
-    font-weight: bold;
     margin: 0 0 1rem;
   }
 
@@ -70,6 +85,14 @@
 
   .flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .reactive-width {
+    width: 50%;
+
+    @media (max-width: 1001px) {
+      width: 100%;
+    }
   }
 
   .details-section {
@@ -91,15 +114,6 @@
     @media (max-width: 1001px) {
       padding: .5rem;
     }
-  }
-
-  .details-section > div > p {
-    font-size: large;
-  }
-
-  .details-section > div > p > span {
-    font-weight: bolder;
-    font-size: larger;
   }
 
   .opening-section {
@@ -137,7 +151,6 @@
   }
 
   .headline {
-    font-weight: bold;
     text-align: center;
     width: 75%;
     padding-bottom: 3rem;
@@ -146,18 +159,6 @@
       width: 100%;
       padding-bottom: 2rem;
     }
-  }
-
-  .font-bold {
-    font-weight: bold;
-  }
-
-  .text-2xl {
-    font-size: xx-large;
-  }
-
-  .text-3xl {
-    font-size: xxx-large;
   }
 
   .banner-layout {
@@ -174,14 +175,6 @@
       flex-direction: column;
       justify-content: start;
       align-items: center;
-    }
-  }
-
-  .reactive-width {
-    width: 50%;
-
-    @media (max-width: 1001px) {
-      width: 100%;
     }
   }
 }
