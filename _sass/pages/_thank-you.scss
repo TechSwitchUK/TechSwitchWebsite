@@ -5,11 +5,6 @@
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 1001px) {
-    flex-direction: column;
-    justify-content: start;
-  }
-
   h1, h3, h4, h5, p {
     font-size: inherit;
     font-weight: inherit;
@@ -66,6 +61,14 @@
 
   .justify-center {
     justify-content: center;
+  }
+
+  .reactive-flex {
+    flex-direction: row;
+
+    @media (max-width: 1001px) {
+      flex-direction: column;
+    }
   }
 
   .reactive-width {
