@@ -1,0 +1,171 @@
+.case-studies {
+  h1, h3, h4, h5, p {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .font-bold {
+    font-weight: bold;
+  }
+
+  .font-bolder {
+    font-weight: bolder;
+  }
+
+  .text-lg {
+    font-size: large;
+  }
+
+  .text-xl {
+    font-size: x-large;
+  }
+
+  .text-2xl {
+    font-size: xx-large;
+  }
+
+  .text-3xl {
+    font-size: xxx-large;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-col {
+    flex-flow: column;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .bg-light-grey {
+    background: #f0f0f0;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .container-box {
+    padding: 1rem;
+    width: 30%;
+    flex-grow: initial;
+  }
+
+  .title-header {
+    margin: 0 0 1rem;
+  }
+
+  .flex-row {
+    flex-direction: row;
+  }
+
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .reactive-width {
+    width: 50%;
+
+    @media (max-width: 1001px) {
+      width: 100%;
+    }
+  }
+
+  .details-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+    @media (max-width: 1001px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 1rem;
+    }
+  }
+
+  .details-section > div {
+    padding: 1rem 2rem;
+
+    @media (max-width: 1001px) {
+      padding: .5rem;
+    }
+  }
+
+  .opening-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media (max-width: 1001px) {
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 1001px) {
+    .opening-section > div {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+
+  .details-container {
+    margin: 5rem 0;
+
+    @media (max-width: 1001px) {
+      margin: 4rem 2rem;
+    }
+  }
+
+  .headline {
+    text-align: center;
+    width: 75%;
+    padding-bottom: 3rem;
+
+    @media (max-width: 1001px) {
+      width: 100%;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .banner-layout {
+    display: flex;
+    width: 100%;
+
+    padding-left: 2.5rem;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 1001px) {
+      padding-left: 0;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+}
