@@ -2,7 +2,7 @@ let contactUsFormSubmitting = false;
 
 function submitContactUsForm() {
   if (contactUsFormSubmitting) {
-    return true;
+    return;
   }
   contactUsFormSubmitting = true;
 
@@ -20,6 +20,7 @@ function submitContactUsForm() {
       // success
       setContactUsFormStatus("success");
       contactUsFormSubmitting = false;
+      window.location.href = "/thank-you";
     },
     () => {
       // error
