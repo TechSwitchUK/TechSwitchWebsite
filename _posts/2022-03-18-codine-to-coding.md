@@ -1,8 +1,10 @@
 ---
 layout: blog-layout
 hero-image-prefix: "hire-hero"
-title: "Codeine to Coding - Yvonne's Story"
+title: "Codeine to Coding"
 ---
+
+## Yvonne's Career Change
 
 Prior to becoming a software developer, I was a pharmacist.
 
@@ -45,6 +47,8 @@ It’s impossible to know everything about coding. I’ve seen fellow developers
 Everyone’s coding journey is different. We all learn and perceive things differently. I found it difficult to read and implement documentation so for me, watching tutorials really helped to reinforce the topics. Find out what learning style works for you and understand that the process may take time. Some concepts will be easier to grasp than others – and that’s normal.
 
 There’s always something to learn and it can be daunting at times. As coding is constantly evolving, no one has full knowledge of this skill. Try not to compare yourself to others as we all learn at different paces and be proud of your progress.
+
+<br/>
 
 These tips have helped me to switch to a career in software development. I hope this blog has been useful and has provided you with a different perspective on the world of coding!
 
