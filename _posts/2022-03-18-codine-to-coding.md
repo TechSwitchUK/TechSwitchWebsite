@@ -1,7 +1,7 @@
 ---
 layout: blog-layout
 hero-image-prefix: "hire-hero"
-title: "Codeine to Coding, Yvonne's Story"
+title: "Codeine to Coding - Yvonne's Story"
 ---
 
 Prior to becoming a software developer, I was a pharmacist.
